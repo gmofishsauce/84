@@ -37,7 +37,7 @@ The 84CP series is intended for hobbyiest and educational use. All 60 pins protr
 
 # Example 84CP01 Baseboard
 
-![Baseboard layout](./84CP01.jpg)
+![Baseboard layout](./img/84CP01.jpg)
 
 # Is the 9572 CPLD obsolete?
 

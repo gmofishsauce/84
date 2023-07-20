@@ -1,0 +1,81 @@
+Pin Freeze File:  version P.20131013
+
+9572XL64 XC9572XL-10-VQ64
+A<0> S:PIN36
+A<10> S:PIN2
+A<11> S:PIN5
+A<12> S:PIN31
+A<13> S:PIN56
+A<14> S:PIN34
+A<15> S:PIN58
+A<1> S:PIN61
+A<2> S:PIN48
+A<3> S:PIN6
+A<4> S:PIN52
+A<5> S:PIN39
+A<6> S:PIN25
+A<7> S:PIN35
+A<8> S:PIN8
+A<9> S:PIN45
+B<0> S:PIN16
+B<10> S:PIN60
+B<11> S:PIN11
+B<12> S:PIN15
+B<13> S:PIN63
+B<14> S:PIN38
+B<15> S:PIN17
+B<1> S:PIN47
+B<2> S:PIN32
+B<3> S:PIN44
+B<4> S:PIN9
+B<5> S:PIN57
+B<6> S:PIN12
+B<7> S:PIN19
+B<8> S:PIN20
+B<9> S:PIN18
+C_IN S:PIN64
+FUNC<0> S:PIN46
+FUNC<1> S:PIN33
+C_OUT S:PIN59
+OUT<0> S:PIN62
+OUT<10> S:PIN13
+OUT<11> S:PIN23
+OUT<12> S:PIN40
+OUT<13> S:PIN10
+OUT<14> S:PIN1
+OUT<15> S:PIN7
+OUT<1> S:PIN43
+OUT<2> S:PIN22
+OUT<3> S:PIN24
+OUT<4> S:PIN49
+OUT<5> S:PIN4
+OUT<6> S:PIN51
+OUT<7> S:PIN50
+OUT<8> S:PIN42
+OUT<9> S:PIN27
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 EXP6_ Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2 EXP7_ OUT_10_OBUF
+		 EXP8_ OUT_13_OBUF EXP9_ Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2
+		 Madd_result_addsub0001_Mxor_Result<10>__xor0000/Madd_result_addsub0001_Mxor_Result<10>__xor0000_D Madd_result_addsub0001_Mxor_Result<11>__xor0000/Madd_result_addsub0001_Mxor_Result<11>__xor0000_D Madd_result_addsub0001_Mxor_Result<13>__xor0000/Madd_result_addsub0001_Mxor_Result<13>__xor0000_D OUT_11_OBUF
+		 Madd_result_addsub0001_Mxor_Result<2>__xor0000/Madd_result_addsub0001_Mxor_Result<2>__xor0000_D EXP10_ EXP11_ Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2
+		 EXP12_ EXP13_
+PARTITION FB2_3 EXP14_ C_OUT_OBUF EXP15_ OUT_0_OBUF
+		 EXP16_
+PARTITION FB2_9 EXP17_ OUT_14_OBUF EXP18_ OUT_5_OBUF
+		 EXP19_
+PARTITION FB2_16 EXP20_ OUT_15_OBUF EXP21_
+PARTITION FB3_1 Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2 OUT_2_OBUF EXP22_ Madd_result_addsub0001_Mxor_Result<8>__xor0000/Madd_result_addsub0001_Mxor_Result<8>__xor0000_D
+		 OUT_3_OBUF Madd_result_addsub0001_Mxor_Result<6>__xor0000/Madd_result_addsub0001_Mxor_Result<6>__xor0000_D Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D
+		 OUT_9_OBUF Madd_result_addsub0001_Mxor_Result<3>__xor0000/Madd_result_addsub0001_Mxor_Result<3>__xor0000_D Madd_result_addsub0001_Mxor_Result<12>__xor0000/Madd_result_addsub0001_Mxor_Result<12>__xor0000_D OUT_12_OBUF
+		 EXP23_ Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2 EXP24_ OUT_8_OBUF
+		 EXP25_ EXP26_
+PARTITION FB4_1 EXP27_ OUT_1_OBUF EXP28_ Madd_result_addsub0001_Mxor_Result<7>__xor0000/Madd_result_addsub0001_Mxor_Result<7>__xor0000_D
+		 Madd_result_addsub0001_Mxor_Result<9>__xor0000/Madd_result_addsub0001_Mxor_Result<9>__xor0000_D OUT_4_OBUF EXP29_ Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2
+		 EXP30_ OUT_6_OBUF EXP31_ Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2
+		 EXP32_ OUT_7_OBUF EXP33_ EXP34_
+		 Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2 EXP35_
+

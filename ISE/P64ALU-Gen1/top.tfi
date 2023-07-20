@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+top instance_name (
+    .A(A), 
+    .B(B), 
+    .FUNC(FUNC), 
+    .OUT(OUT), 
+    .C_OUT(C_OUT)
+    );
+
+

@@ -1,63 +1,73 @@
 Connector Pin	Signal Name	Chip pin
 ~~~~~~~~~~~~~	~~~~~~~~~~~	~~~~~~~~
-J1-01			A 0			36
-J1-02			A 1			61
-J1-03			A 2			48
-J1-04			A 3			6
-J1-05			A 4			52
-J1-06			A 5			39
-J1-07			A 6			25
-J1-08			A 7			35
-J1-09			UNUSED		---
-J1-10			A 8			8
-J1-11			A 9			45
-J1-12			A 10		2
-J1-13			A 11		5
-J1-14			A 12		31
-J1-15			A 13		56
-J1-16			A 14		34
-J1-17			A 15		58
-J1-18			UNUSED		---
+J1-01			Vcc			(03) internal
+J1-02			Vcc			(26) internal
+
+J1-03			A 0			36
+J1-04			A 1			61
+J1-05			A 2			48
+J1-06			A 3			06
+J1-07			A 4			52
+J1-08			A 5			39
+J1-09			A 6			25
+J1-10			A 7			35
+J1-11			A 8			08
+J1-12			A 9			45
+J1-13			A 10		02
+J1-14			A 11		05
+J1-15			A 12		31
+J1-16			A 13		56
+J1-17			A 14		34
+J1-18			A 15		58
+
 J1-19			C_IN		64
 J1-20			C_OUT		59
 J1-21			F0			46
 J1-22			F1			33
-J1-23			UNUSED		---
-J1-24			B 0			16
-J1-25			B 1			47
-J1-26			B 2			32
-J1-27			B 3			44
-J1-28			B 4			9
-J1-29			B 5			57
-J1-30			B 6			12
-			
-J2-01			B 7			19
-J2-02			UNUSED		---
-J2-03			B 8			20
-J2-04			B 9			18
-J2-05			B 10		60
-J2-06			B 11		11
-J2-07			B 12		15
-J2-08			B 13		63
-J2-09			B 14		38
-J2-10			B 15		17
-J2-11			UNUSED		---
-J2-12			OUT 0		62
-J2-13			OUT 1		43
-J2-14			OUT 2		22
+
+J1-23			B 0			16
+J1-24			B 1			47
+J1-25			B 2			32
+J1-26			B 3			44
+J1-27			B 4			09
+J1-28			B 5			57
+
+J1-29			GND			(14) internal
+J1-30			GND			(21) internal
+
+J2-30			GND			(41) internal
+J2-29			GND			(54) internal
+
+J2-28			B 6			12
+J2-27			B 7			19
+J2-26			B 8			20
+J2-25			B 9			18
+J2-24			B 10		60
+J2-23			B 11		11
+J2-22			B 12		15
+J2-21			B 13		63
+J2-20			B 14		38
+J2-19			B 15		17
+
+J2-18			OUT 0		62
+J2-17			OUT 1		43
+J2-16			OUT 2		22
 J2-15			OUT 3		24
-J2-16			OUT 4		49
-J2-17			OUT 5		4
-J2-18			OUT 6		51
-J2-19			OUT 7		50
-J2-20			UNUSED		---
-J2-21			OUT 8		42
-J2-22			OUT 9		27
-J2-23			OUT 10		13
-J2-24			OUT 11		23
-J2-25			OUT 12		40
-J2-26			OUT 13		10
-J2-27			OUT 14		1
-J2-28			OUT 15		7
-J2-29			UNUSED		---
-J2-30			UNUSED		---
+J2-14			OUT 4		49
+J2-13			OUT 5		04
+J2-12			OUT 6		51
+J2-11			OUT 7		50
+J2-10			OUT 8		42
+J2-09			OUT 9		27
+J2-08			OUT 10		13
+J2-07			OUT 11		23
+J2-06			OUT 12		40
+J2-05			OUT 13		10
+J2-04			OUT 14		01
+J2-03			OUT 15		07
+
+J2-02			Vcc			(55) internal
+J2-01			Vcc			(37) internal
+
+NONE            JTAG		28, 29, 30, 53
+

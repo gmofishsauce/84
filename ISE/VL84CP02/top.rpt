@@ -1,0 +1,1475 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: top                                 Date:  7-21-2023,  7:27AM
+Device Used: XC9572XL-10-VQ64
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+37 /72  ( 51%) 294 /360  ( 82%) 113/216 ( 52%)   0  /72  (  0%) 52 /52  (100%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1          10/18       37/54       85/90      13/13*
+FB2           5/18       15/54       44/90      13/13*
+FB3          13/18       35/54       82/90      14/14*
+FB4           9/18       26/54       83/90      12/12*
+             -----       -----       -----      -----    
+             37/72      113/216     294/360     52/52 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   35          35    |  I/O              :    46      46
+Output        :   17          17    |  GCK/IO           :     3       3
+Bidirectional :    0           0    |  GTS/IO           :     2       2
+GCK           :    0           0    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     52          52
+
+** Power Data **
+
+There are 37 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'top.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 17 Outputs **
+
+Signal                                                                                             Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                                                                               Pts   Inps          No.  Type    Use     Mode Rate State
+OUT<10>                                                                                            9     9     FB1_4   13   I/O     O       STD  FAST 
+OUT<13>                                                                                            7     7     FB1_6   10   I/O     O       STD  FAST 
+OUT<11>                                                                                            11    11    FB1_12  23   I/O     O       STD  FAST 
+C_OUT                                                                                              8     7     FB2_4   59   I/O     O       STD  FAST 
+OUT<0>                                                                                             7     5     FB2_6   62   I/O     O       STD  FAST 
+OUT<14>                                                                                            7     5     FB2_10  1    I/O     O       STD  FAST 
+OUT<5>                                                                                             7     7     FB2_12  4    I/O     O       STD  FAST 
+OUT<15>                                                                                            15    7     FB2_17  7    I/O     O       STD  FAST 
+OUT<2>                                                                                             7     5     FB3_2   22   I/O     O       STD  FAST 
+OUT<3>                                                                                             7     5     FB3_5   24   I/O     O       STD  FAST 
+OUT<9>                                                                                             7     7     FB3_9   27   I/O     O       STD  FAST 
+OUT<12>                                                                                            5     5     FB3_12  40   I/O     O       STD  FAST 
+OUT<8>                                                                                             5     5     FB3_16  42   I/O     O       STD  FAST 
+OUT<1>                                                                                             15    7     FB4_2   43   I/O     O       STD  FAST 
+OUT<4>                                                                                             5     5     FB4_6   49   I/O     O       STD  FAST 
+OUT<6>                                                                                             5     5     FB4_10  51   I/O     O       STD  FAST 
+OUT<7>                                                                                             5     5     FB4_14  50   I/O     O       STD  FAST 
+
+** 20 Buried Nodes **
+
+Signal                                                                                             Total Total Loc     Pwr  Reg Init
+Name                                                                                               Pts   Inps          Mode State
+Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2                                   19    29    FB1_2   STD  
+Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2                                   7     5     FB1_8   STD  
+Madd_result_addsub0001_Mxor_Result<10>__xor0000/Madd_result_addsub0001_Mxor_Result<10>__xor0000_D  2     2     FB1_9   STD  
+Madd_result_addsub0001_Mxor_Result<11>__xor0000/Madd_result_addsub0001_Mxor_Result<11>__xor0000_D  2     2     FB1_10  STD  
+Madd_result_addsub0001_Mxor_Result<13>__xor0000/Madd_result_addsub0001_Mxor_Result<13>__xor0000_D  2     2     FB1_11  STD  
+Madd_result_addsub0001_Mxor_Result<2>__xor0000/Madd_result_addsub0001_Mxor_Result<2>__xor0000_D    2     2     FB1_13  STD  
+Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2                                   24    25    FB1_16  STD  
+Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2                                   20    17    FB3_1   STD  
+Madd_result_addsub0001_Mxor_Result<8>__xor0000/Madd_result_addsub0001_Mxor_Result<8>__xor0000_D    2     2     FB3_4   STD  
+Madd_result_addsub0001_Mxor_Result<6>__xor0000/Madd_result_addsub0001_Mxor_Result<6>__xor0000_D    2     2     FB3_6   STD  
+Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D    2     2     FB3_7   STD  
+Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D    2     2     FB3_8   STD  
+Madd_result_addsub0001_Mxor_Result<3>__xor0000/Madd_result_addsub0001_Mxor_Result<3>__xor0000_D    2     2     FB3_10  STD  
+Madd_result_addsub0001_Mxor_Result<12>__xor0000/Madd_result_addsub0001_Mxor_Result<12>__xor0000_D  2     2     FB3_11  STD  
+Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2                                   19    15    FB3_14  STD  
+Madd_result_addsub0001_Mxor_Result<7>__xor0000/Madd_result_addsub0001_Mxor_Result<7>__xor0000_D    2     2     FB4_4   STD  
+Madd_result_addsub0001_Mxor_Result<9>__xor0000/Madd_result_addsub0001_Mxor_Result<9>__xor0000_D    2     2     FB4_5   STD  
+Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2                                   16    9     FB4_8   STD  
+Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2                                   15    7     FB4_12  STD  
+Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2                                   18    13    FB4_17  STD  
+
+** 35 Inputs **
+
+Signal                                                                                             Loc     Pin  Pin     Pin     
+Name                                                                                                       No.  Type    Use     
+A<8>                                                                                               FB1_2   8    I/O     I
+B<6>                                                                                               FB1_3   12   I/O     I
+B<4>                                                                                               FB1_5   9    I/O     I
+B<11>                                                                                              FB1_8   11   I/O     I
+B<12>                                                                                              FB1_9   15   GCK/I/O I
+B<9>                                                                                               FB1_10  18   I/O     I
+B<0>                                                                                               FB1_11  16   GCK/I/O I
+B<15>                                                                                              FB1_14  17   GCK/I/O I
+B<7>                                                                                               FB1_15  19   I/O     I
+B<8>                                                                                               FB1_17  20   I/O     I
+B<10>                                                                                              FB2_2   60   I/O     I
+A<15>                                                                                              FB2_3   58   I/O     I
+A<1>                                                                                               FB2_5   61   I/O     I
+B<13>                                                                                              FB2_8   63   I/O     I
+C_IN                                                                                               FB2_9   64   GSR/I/O I
+A<10>                                                                                              FB2_11  2    GTS/I/O I
+A<11>                                                                                              FB2_14  5    GTS/I/O I
+A<3>                                                                                               FB2_15  6    I/O     I
+A<12>                                                                                              FB3_3   31   I/O     I
+B<2>                                                                                               FB3_4   32   I/O     I
+A<14>                                                                                              FB3_6   34   I/O     I
+A<6>                                                                                               FB3_8   25   I/O     I
+A<5>                                                                                               FB3_10  39   I/O     I
+FUNC<1>                                                                                            FB3_11  33   I/O     I
+A<7>                                                                                               FB3_14  35   I/O     I
+A<0>                                                                                               FB3_15  36   I/O     I
+B<14>                                                                                              FB3_17  38   I/O     I
+FUNC<0>                                                                                            FB4_3   46   I/O     I
+B<1>                                                                                               FB4_4   47   I/O     I
+B<3>                                                                                               FB4_5   44   I/O     I
+A<9>                                                                                               FB4_8   45   I/O     I
+A<2>                                                                                               FB4_11  48   I/O     I
+A<4>                                                                                               FB4_12  52   I/O     I
+A<13>                                                                                              FB4_15  56   I/O     I
+B<5>                                                                                               FB4_17  57   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               37/17
+Number of signals used by logic mapping into function block:  37
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/5   0     FB1_1         (b)     (b)
+Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2
+                     19      14<-   0   0     FB1_2   8     I/O     I
+(unused)              0       0   /\5   0     FB1_3   12    I/O     I
+OUT<10>               9       8<- /\4   0     FB1_4   13    I/O     O
+(unused)              0       0   /\5   0     FB1_5   9     I/O     I
+OUT<13>               7       5<- /\3   0     FB1_6   10    I/O     O
+(unused)              0       0   /\5   0     FB1_7         (b)     (b)
+Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2
+                      7       2<-   0   0     FB1_8   11    I/O     I
+Madd_result_addsub0001_Mxor_Result<10>__xor0000/Madd_result_addsub0001_Mxor_Result<10>__xor0000_D
+                      2       0   /\2   1     FB1_9   15    GCK/I/O I
+Madd_result_addsub0001_Mxor_Result<11>__xor0000/Madd_result_addsub0001_Mxor_Result<11>__xor0000_D
+                      2       0     0   3     FB1_10  18    I/O     I
+Madd_result_addsub0001_Mxor_Result<13>__xor0000/Madd_result_addsub0001_Mxor_Result<13>__xor0000_D
+                      2       0   \/3   0     FB1_11  16    GCK/I/O I
+OUT<11>              11       6<-   0   0     FB1_12  23    I/O     O
+Madd_result_addsub0001_Mxor_Result<2>__xor0000/Madd_result_addsub0001_Mxor_Result<2>__xor0000_D
+                      2       0   /\3   0     FB1_13        (b)     (b)
+(unused)              0       0   \/4   1     FB1_14  17    GCK/I/O I
+(unused)              0       0   \/5   0     FB1_15  19    I/O     I
+Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2
+                     24      19<-   0   0     FB1_16        (b)     (b)
+(unused)              0       0   /\5   0     FB1_17  20    I/O     I
+(unused)              0       0   /\5   0     FB1_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>              14: A<9>                                                                                               26: Madd_result_addsub0001_Mxor_Result<12>__xor0000/Madd_result_addsub0001_Mxor_Result<12>__xor0000_D 
+  2: A<10>             15: B<0>                                                                                               27: Madd_result_addsub0001_Mxor_Result<13>__xor0000/Madd_result_addsub0001_Mxor_Result<13>__xor0000_D 
+  3: A<11>             16: B<10>                                                                                              28: Madd_result_addsub0001_Mxor_Result<2>__xor0000/Madd_result_addsub0001_Mxor_Result<2>__xor0000_D 
+  4: A<12>             17: B<11>                                                                                              29: Madd_result_addsub0001_Mxor_Result<3>__xor0000/Madd_result_addsub0001_Mxor_Result<3>__xor0000_D 
+  5: A<13>             18: B<13>                                                                                              30: Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D 
+  6: A<1>              19: B<1>                                                                                               31: Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D 
+  7: A<2>              20: B<2>                                                                                               32: Madd_result_addsub0001_Mxor_Result<6>__xor0000/Madd_result_addsub0001_Mxor_Result<6>__xor0000_D 
+  8: A<3>              21: C_IN                                                                                               33: Madd_result_addsub0001_Mxor_Result<7>__xor0000/Madd_result_addsub0001_Mxor_Result<7>__xor0000_D 
+  9: A<4>              22: FUNC<0>                                                                                            34: Madd_result_addsub0001_Mxor_Result<8>__xor0000/Madd_result_addsub0001_Mxor_Result<8>__xor0000_D 
+ 10: A<5>              23: FUNC<1>                                                                                            35: Madd_result_addsub0001_Mxor_Result<9>__xor0000/Madd_result_addsub0001_Mxor_Result<9>__xor0000_D 
+ 11: A<6>              24: Madd_result_addsub0001_Mxor_Result<10>__xor0000/Madd_result_addsub0001_Mxor_Result<10>__xor0000_D  36: Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2 
+ 12: A<7>              25: Madd_result_addsub0001_Mxor_Result<11>__xor0000/Madd_result_addsub0001_Mxor_Result<11>__xor0000_D  37: Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2 
+ 13: A<8>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2 
+                     XXXXXXXXXXXXXXX...X.X..XXXXXXXXXXXX..... 29
+OUT<10>              ............XX.X.....XXX.........XXX.... 9
+OUT<13>              ...X.............X...XX..XX.........X... 7
+Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2 
+                     X....X........X...X.X................... 5
+Madd_result_addsub0001_Mxor_Result<10>__xor0000/Madd_result_addsub0001_Mxor_Result<10>__xor0000_D 
+                     .X.............X........................ 2
+Madd_result_addsub0001_Mxor_Result<11>__xor0000/Madd_result_addsub0001_Mxor_Result<11>__xor0000_D 
+                     ..X.............X....................... 2
+Madd_result_addsub0001_Mxor_Result<13>__xor0000/Madd_result_addsub0001_Mxor_Result<13>__xor0000_D 
+                     ....X............X...................... 2
+OUT<11>              .X..........XX..X....XXXX........XXX.... 11
+Madd_result_addsub0001_Mxor_Result<2>__xor0000/Madd_result_addsub0001_Mxor_Result<2>__xor0000_D 
+                     ......X............X.................... 2
+Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2 
+                     XXX..XXXXXXXXXX...XXX..XX...XXXXXXX..... 25
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               15/39
+Number of signals used by logic mapping into function block:  15
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1         (b)     
+(unused)              0       0     0   5     FB2_2   60    I/O     I
+(unused)              0       0   \/2   3     FB2_3   58    I/O     I
+C_OUT                 8       3<-   0   0     FB2_4   59    I/O     O
+(unused)              0       0   /\1   4     FB2_5   61    I/O     I
+OUT<0>                7       2<-   0   0     FB2_6   62    I/O     O
+(unused)              0       0   /\2   3     FB2_7         (b)     (b)
+(unused)              0       0     0   5     FB2_8   63    I/O     I
+(unused)              0       0   \/1   4     FB2_9   64    GSR/I/O I
+OUT<14>               7       2<-   0   0     FB2_10  1     I/O     O
+(unused)              0       0   /\1   4     FB2_11  2     GTS/I/O I
+OUT<5>                7       2<-   0   0     FB2_12  4     I/O     O
+(unused)              0       0   /\2   3     FB2_13        (b)     (b)
+(unused)              0       0     0   5     FB2_14  5     GTS/I/O I
+(unused)              0       0     0   5     FB2_15  6     I/O     I
+(unused)              0       0   \/5   0     FB2_16        (b)     (b)
+OUT<15>              15      10<-   0   0     FB2_17  7     I/O     O
+(unused)              0       0   /\5   0     FB2_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>               6: B<14>             11: FUNC<1> 
+  2: A<14>              7: B<15>             12: Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D 
+  3: A<15>              8: B<5>              13: Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D 
+  4: A<4>               9: C_IN              14: Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2 
+  5: B<0>              10: FUNC<0>           15: Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+C_OUT                .XX..XX..XX...X......................... 7
+OUT<0>               X...X...XXX............................. 5
+OUT<14>              .X...X...XX...X......................... 5
+OUT<5>               ...X...X.XXXXX.......................... 7
+OUT<15>              .XX..XX..XX...X......................... 7
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               35/19
+Number of signals used by logic mapping into function block:  35
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2
+                     20      15<-   0   0     FB3_1         (b)     (b)
+OUT<2>                7       7<- /\5   0     FB3_2   22    I/O     O
+(unused)              0       0   /\5   0     FB3_3   31    I/O     I
+Madd_result_addsub0001_Mxor_Result<8>__xor0000/Madd_result_addsub0001_Mxor_Result<8>__xor0000_D
+                      2       0   /\2   1     FB3_4   32    I/O     I
+OUT<3>                7       2<-   0   0     FB3_5   24    I/O     O
+Madd_result_addsub0001_Mxor_Result<6>__xor0000/Madd_result_addsub0001_Mxor_Result<6>__xor0000_D
+                      2       0   /\2   1     FB3_6   34    I/O     I
+Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D
+                      2       0     0   3     FB3_7         (b)     (b)
+Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D
+                      2       0   \/2   1     FB3_8   25    I/O     I
+OUT<9>                7       2<-   0   0     FB3_9   27    I/O     O
+Madd_result_addsub0001_Mxor_Result<3>__xor0000/Madd_result_addsub0001_Mxor_Result<3>__xor0000_D
+                      2       0   \/1   2     FB3_10  39    I/O     I
+Madd_result_addsub0001_Mxor_Result<12>__xor0000/Madd_result_addsub0001_Mxor_Result<12>__xor0000_D
+                      2       1<- \/4   0     FB3_11  33    I/O     I
+OUT<12>               5       4<- \/4   0     FB3_12  40    I/O     O
+(unused)              0       0   \/5   0     FB3_13        (b)     (b)
+Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2
+                     19      14<-   0   0     FB3_14  35    I/O     I
+(unused)              0       0   /\5   0     FB3_15  36    I/O     I
+OUT<8>                5       0     0   0     FB3_16  42    I/O     O
+(unused)              0       0   \/5   0     FB3_17  38    I/O     I
+(unused)              0       0   \/5   0     FB3_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>              13: B<1>                                                                                               25: Madd_result_addsub0001_Mxor_Result<3>__xor0000/Madd_result_addsub0001_Mxor_Result<3>__xor0000_D 
+  2: A<12>             14: B<2>                                                                                               26: Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D 
+  3: A<1>              15: B<3>                                                                                               27: Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D 
+  4: A<2>              16: B<4>                                                                                               28: Madd_result_addsub0001_Mxor_Result<6>__xor0000/Madd_result_addsub0001_Mxor_Result<6>__xor0000_D 
+  5: A<3>              17: B<5>                                                                                               29: Madd_result_addsub0001_Mxor_Result<7>__xor0000/Madd_result_addsub0001_Mxor_Result<7>__xor0000_D 
+  6: A<4>              18: B<6>                                                                                               30: Madd_result_addsub0001_Mxor_Result<8>__xor0000/Madd_result_addsub0001_Mxor_Result<8>__xor0000_D 
+  7: A<5>              19: B<8>                                                                                               31: Madd_result_addsub0001_Mxor_Result<9>__xor0000/Madd_result_addsub0001_Mxor_Result<9>__xor0000_D 
+  8: A<6>              20: B<9>                                                                                               32: Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2 
+  9: A<7>              21: C_IN                                                                                               33: Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2 
+ 10: A<8>              22: FUNC<0>                                                                                            34: Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2 
+ 11: B<0>              23: FUNC<1>                                                                                            35: Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2 
+ 12: B<12>             24: Madd_result_addsub0001_Mxor_Result<12>__xor0000/Madd_result_addsub0001_Mxor_Result<12>__xor0000_D 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2 
+                     X.XXXXXXX.X.XX......X...XXXXX........... 17
+OUT<2>               ...X.........X.......XX........X........ 5
+Madd_result_addsub0001_Mxor_Result<8>__xor0000/Madd_result_addsub0001_Mxor_Result<8>__xor0000_D 
+                     .........X........X..................... 2
+OUT<3>               ....X.........X......XX.........X....... 5
+Madd_result_addsub0001_Mxor_Result<6>__xor0000/Madd_result_addsub0001_Mxor_Result<6>__xor0000_D 
+                     .......X.........X...................... 2
+Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D 
+                     ......X.........X....................... 2
+Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D 
+                     .....X.........X........................ 2
+OUT<9>               .........X.........X.XX......XX..X...... 7
+Madd_result_addsub0001_Mxor_Result<3>__xor0000/Madd_result_addsub0001_Mxor_Result<3>__xor0000_D 
+                     ....X.........X......................... 2
+Madd_result_addsub0001_Mxor_Result<12>__xor0000/Madd_result_addsub0001_Mxor_Result<12>__xor0000_D 
+                     .X.........X............................ 2
+OUT<12>              ...........X.........XXX..........X..... 5
+Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2 
+                     X.XXXXXX..X.XX......X...XXXX............ 15
+OUT<8>               ..................X..XX......X...X...... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               26/28
+Number of signals used by logic mapping into function block:  26
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/5   0     FB4_1         (b)     (b)
+OUT<1>               15      10<-   0   0     FB4_2   43    I/O     O
+(unused)              0       0   /\5   0     FB4_3   46    I/O     I
+Madd_result_addsub0001_Mxor_Result<7>__xor0000/Madd_result_addsub0001_Mxor_Result<7>__xor0000_D
+                      2       0     0   3     FB4_4   47    I/O     I
+Madd_result_addsub0001_Mxor_Result<9>__xor0000/Madd_result_addsub0001_Mxor_Result<9>__xor0000_D
+                      2       0   \/1   2     FB4_5   44    I/O     I
+OUT<4>                5       1<- \/1   0     FB4_6   49    I/O     O
+(unused)              0       0   \/5   0     FB4_7         (b)     (b)
+Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2
+                     16      11<-   0   0     FB4_8   45    I/O     I
+(unused)              0       0   /\5   0     FB4_9         (b)     (b)
+OUT<6>                5       0     0   0     FB4_10  51    I/O     O
+(unused)              0       0   \/5   0     FB4_11  48    I/O     I
+Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2
+                     15      10<-   0   0     FB4_12  52    I/O     I
+(unused)              0       0   /\5   0     FB4_13        (b)     (b)
+OUT<7>                5       0     0   0     FB4_14  50    I/O     O
+(unused)              0       0   \/3   2     FB4_15  56    I/O     I
+(unused)              0       0   \/5   0     FB4_16        (b)     (b)
+Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2
+                     18      13<-   0   0     FB4_17  57    I/O     I
+(unused)              0       0   /\5   0     FB4_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>              10: B<1>              19: Madd_result_addsub0001_Mxor_Result<3>__xor0000/Madd_result_addsub0001_Mxor_Result<3>__xor0000_D 
+  2: A<1>              11: B<2>              20: Madd_result_addsub0001_Mxor_Result<4>__xor0000/Madd_result_addsub0001_Mxor_Result<4>__xor0000_D 
+  3: A<2>              12: B<4>              21: Madd_result_addsub0001_Mxor_Result<5>__xor0000/Madd_result_addsub0001_Mxor_Result<5>__xor0000_D 
+  4: A<3>              13: B<6>              22: Madd_result_addsub0001_Mxor_Result<6>__xor0000/Madd_result_addsub0001_Mxor_Result<6>__xor0000_D 
+  5: A<4>              14: B<7>              23: Madd_result_addsub0001_Mxor_Result<7>__xor0000/Madd_result_addsub0001_Mxor_Result<7>__xor0000_D 
+  6: A<5>              15: B<9>              24: Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2 
+  7: A<7>              16: C_IN              25: Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2 
+  8: A<9>              17: FUNC<0>           26: Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2 
+  9: B<0>              18: FUNC<1>          
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+OUT<1>               XX......XX.....XXX...................... 7
+Madd_result_addsub0001_Mxor_Result<7>__xor0000/Madd_result_addsub0001_Mxor_Result<7>__xor0000_D 
+                     ......X......X.......................... 2
+Madd_result_addsub0001_Mxor_Result<9>__xor0000/Madd_result_addsub0001_Mxor_Result<9>__xor0000_D 
+                     .......X......X......................... 2
+OUT<4>               ...........X....XX.X...X................ 5
+Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2 
+                     XXXX....XXX....X..X..................... 9
+OUT<6>               ............X...XX...X..X............... 5
+Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2 
+                     XXX.....XXX....X........................ 7
+OUT<7>               .............X..XX....X..X.............. 5
+Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2 
+                     XXXXXX..XXX....X..XXX................... 13
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+C_OUT <= ((NOT FUNC(1) AND NOT FUNC(0) AND B(15) AND A(15))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND A(15) AND A(14))
+	OR (FUNC(1) AND FUNC(0))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(15) AND B(14) AND A(14))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(15) AND B(14) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(15) AND A(14) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND A(15) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND A(15) AND A(14) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Madd_result_addsub0001_Mxor_Result(2)__xor0000/Madd_result_addsub0001_Mxor_Result(2)__xor0000_D <= A(2)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(2)__xor0000/Madd_result_addsub0001_Mxor_Result(2)__xor0000_D <= B(2);
+
+
+Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D <= A(3)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D <= B(3);
+
+
+Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D <= A(4)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D <= B(4);
+
+
+Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D <= A(5)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D <= B(5);
+
+
+Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D <= A(6)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D <= B(6);
+
+
+Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D <= A(7)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D <= B(7);
+
+
+Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D <= A(8)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D <= B(8);
+
+
+Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D <= A(9)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D <= B(9);
+
+
+Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D <= A(10)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D <= B(10);
+
+
+Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D <= A(11)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D <= B(11);
+
+
+Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D <= A(12)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D <= B(12);
+
+
+Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D <= A(13)
+	 XOR 
+Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D <= B(13);
+
+
+Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2 <= ((B(1) AND B(0) AND C_IN)
+	OR (B(1) AND C_IN AND A(0))
+	OR (B(1) AND A(1))
+	OR (B(1) AND B(0) AND A(0))
+	OR (B(0) AND C_IN AND A(1))
+	OR (B(0) AND A(1) AND A(0))
+	OR (C_IN AND A(1) AND A(0)));
+
+
+Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2 <= ((B(1) AND A(2) AND A(1))
+	OR (B(2) AND B(1) AND B(0) AND C_IN)
+	OR (B(2) AND B(1) AND C_IN AND A(0))
+	OR (B(0) AND A(2) AND A(1) AND A(0))
+	OR (C_IN AND A(2) AND A(1) AND A(0))
+	OR (B(2) AND A(2))
+	OR (B(1) AND B(0) AND C_IN AND A(2))
+	OR (B(1) AND B(0) AND A(2) AND A(0))
+	OR (B(1) AND C_IN AND A(2) AND A(0))
+	OR (B(0) AND C_IN AND A(2) AND A(1))
+	OR (B(2) AND B(1) AND A(1))
+	OR (B(2) AND B(1) AND B(0) AND A(0))
+	OR (B(2) AND B(0) AND C_IN AND A(1))
+	OR (B(2) AND B(0) AND A(1) AND A(0))
+	OR (B(2) AND C_IN AND A(1) AND A(0)));
+
+
+Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2 <= ((OUT_4_OBUF.EXP)
+	OR (B(2) AND B(1) AND B(0) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND C_IN AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND A(2) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(0) AND C_IN AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (A(3) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(1) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(0) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND B(0) AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND C_IN AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (B(0) AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D)
+	OR (C_IN AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D));
+
+
+Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2 <= ((EXP33_.EXP)
+	OR (B(2) AND B(1) AND B(0) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND C_IN AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND A(2) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(0) AND C_IN AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (A(5) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(1) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(0) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND B(0) AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND C_IN AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (B(0) AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (C_IN AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D));
+
+
+Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2 <= ((OUT_12_OBUF.EXP)
+	OR (B(2) AND B(1) AND B(0) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND C_IN AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND A(2) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(0) AND C_IN AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (A(6) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(1) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(0) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND B(0) AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND C_IN AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (B(0) AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (C_IN AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D));
+
+
+Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2 <= ((A(7) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(1) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (EXP25_.EXP)
+	OR (B(2) AND B(1) AND B(0) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND C_IN AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND A(2) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(0) AND C_IN AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(0) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND B(0) AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND C_IN AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (B(0) AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (C_IN AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D));
+
+
+Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2 <= ((EXP10_.EXP)
+	OR (B(2) AND B(1) AND B(0) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND C_IN AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND A(2) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(0) AND C_IN AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (EXP13_.EXP)
+	OR (A(11) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(1) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND A(2) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(0) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND B(0) AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND C_IN AND A(2) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (B(0) AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (C_IN AND A(2) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D));
+
+
+Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2 <= ((A(8) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(7) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(6) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(5) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(4) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (OUT_10_OBUF.EXP)
+	OR (A(3) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(2) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(2)__xor0000/Madd_result_addsub0001_Mxor_Result(2)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (B(1) AND A(1) AND 
+	Madd_result_addsub0001_Mxor_Result(2)__xor0000/Madd_result_addsub0001_Mxor_Result(2)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (B(1) AND B(0) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(2)__xor0000/Madd_result_addsub0001_Mxor_Result(2)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (B(0) AND A(1) AND A(0) AND 
+	Madd_result_addsub0001_Mxor_Result(2)__xor0000/Madd_result_addsub0001_Mxor_Result(2)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(3)__xor0000/Madd_result_addsub0001_Mxor_Result(3)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(13) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(12) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(11) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(10) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (A(9) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D));
+
+
+OUT(0) <= NOT (((FUNC(1) AND NOT FUNC(0) AND NOT B(0) AND NOT A(0))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(0) AND C_IN AND A(0))
+	OR (FUNC(0) AND B(0))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT A(0))
+	OR (NOT FUNC(1) AND B(0) AND C_IN AND NOT A(0))
+	OR (NOT FUNC(1) AND B(0) AND NOT C_IN AND A(0))
+	OR (NOT FUNC(0) AND NOT B(0) AND NOT C_IN AND NOT A(0))));
+
+
+OUT(1) <= NOT (((NOT FUNC(1) AND B(1) AND B(0) AND C_IN AND NOT A(1))
+	OR (NOT FUNC(1) AND B(1) AND B(0) AND NOT A(1) AND A(0))
+	OR (NOT FUNC(1) AND B(1) AND NOT B(0) AND A(1) AND NOT A(0))
+	OR (NOT FUNC(1) AND B(1) AND C_IN AND NOT A(1) AND A(0))
+	OR (NOT FUNC(0) AND NOT B(1) AND NOT B(0) AND NOT C_IN AND NOT A(1))
+	OR (NOT FUNC(0) AND NOT B(1) AND NOT B(0) AND NOT A(1) AND NOT A(0))
+	OR (NOT FUNC(0) AND NOT B(1) AND NOT C_IN AND NOT A(1) AND NOT A(0))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(1) AND B(0) AND C_IN AND A(1))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(1) AND B(0) AND A(1) AND A(0))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(1) AND C_IN AND A(1) AND A(0))
+	OR (FUNC(0) AND B(1))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT A(1))
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(1) AND NOT A(1))
+	OR (NOT FUNC(1) AND B(1) AND NOT B(0) AND NOT C_IN AND A(1))
+	OR (NOT FUNC(1) AND B(1) AND NOT C_IN AND A(1) AND NOT A(0))));
+
+
+OUT(2) <= NOT (((
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D.EXP)
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT A(2))
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(2) AND NOT A(2))
+	OR (NOT FUNC(1) AND B(2) AND A(2) AND 
+	NOT Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2)
+	OR (NOT FUNC(1) AND NOT B(2) AND NOT A(2) AND 
+	NOT Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(2) AND A(2) AND 
+	Madd_result_addsub0001__or0001/Madd_result_addsub0001__or0001_D2)));
+
+
+OUT(3) <= NOT (((FUNC(0) AND B(3))
+	OR (NOT FUNC(1) AND B(3) AND NOT A(3) AND 
+	Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2)
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT A(3))
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(3) AND NOT A(3))
+	OR (NOT FUNC(1) AND B(3) AND A(3) AND 
+	NOT Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2)
+	OR (NOT FUNC(1) AND NOT B(3) AND NOT A(3) AND 
+	NOT Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(3) AND A(3) AND 
+	Madd_result_addsub0001__or0002/Madd_result_addsub0001__or0002_D2)));
+
+
+OUT(4) <= NOT (((NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2)
+	OR (FUNC(0) AND B(4))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(4) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D)));
+
+
+OUT(5) <= NOT (((NOT FUNC(1) AND NOT FUNC(0) AND A(4) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2)
+	OR (FUNC(0) AND B(5))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(5) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT A(4) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	Madd_result_addsub0001_Mxor_Result(4)__xor0000/Madd_result_addsub0001_Mxor_Result(4)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(5)__xor0000/Madd_result_addsub0001_Mxor_Result(5)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0003/Madd_result_addsub0001__or0003_D2)));
+
+
+OUT(6) <= NOT (((FUNC(0) AND B(6))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(6) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(6)__xor0000/Madd_result_addsub0001_Mxor_Result(6)__xor0000_D AND 
+	Madd_result_addsub0001__or0005/Madd_result_addsub0001__or0005_D2)));
+
+
+OUT(7) <= NOT (((FUNC(0) AND B(7))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(7) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(7)__xor0000/Madd_result_addsub0001_Mxor_Result(7)__xor0000_D AND 
+	Madd_result_addsub0001__or0006/Madd_result_addsub0001__or0006_D2)));
+
+
+OUT(8) <= NOT (((FUNC(0) AND B(8))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(8) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2)));
+
+
+OUT(9) <= NOT (((NOT FUNC(1) AND NOT FUNC(0) AND A(8) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2)
+	OR (FUNC(0) AND B(9))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(9) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT A(8) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2)));
+
+
+OUT(10) <= NOT (((OUT_13_OBUF.EXP)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(10) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT A(9) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND A(9) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2)
+	OR (FUNC(0) AND B(10))));
+
+
+OUT(11) <= NOT (((NOT FUNC(1) AND NOT A(9) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND A(9) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2)
+	OR (NOT FUNC(1) AND NOT A(8) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND A(8) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(8)__xor0000/Madd_result_addsub0001_Mxor_Result(8)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(9)__xor0000/Madd_result_addsub0001_Mxor_Result(9)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D AND 
+	Madd_result_addsub0001__or0007/Madd_result_addsub0001__or0007_D2)
+	OR (FUNC(0) AND B(11))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(11) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT A(10) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND A(10) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(10)__xor0000/Madd_result_addsub0001_Mxor_Result(10)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(11)__xor0000/Madd_result_addsub0001_Mxor_Result(11)__xor0000_D)));
+
+
+OUT(12) <= NOT (((NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(12) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2)
+	OR (FUNC(0) AND B(12))));
+
+
+OUT(13) <= NOT (((FUNC(1) AND NOT FUNC(0) AND NOT B(13) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT A(12) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	NOT Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D AND 
+	NOT Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND A(12) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_result_addsub0001_Mxor_Result(12)__xor0000/Madd_result_addsub0001_Mxor_Result(12)__xor0000_D AND 
+	Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D AND 
+	Madd_result_addsub0001__or0011/Madd_result_addsub0001__or0011_D2)
+	OR (FUNC(0) AND B(13))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_result_addsub0001_Mxor_Result(13)__xor0000/Madd_result_addsub0001_Mxor_Result(13)__xor0000_D)));
+
+
+OUT(14) <= NOT (((NOT FUNC(1) AND B(14) AND NOT A(14) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (FUNC(0) AND B(14))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT A(14))
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(14) AND NOT A(14))
+	OR (NOT FUNC(1) AND B(14) AND A(14) AND 
+	NOT Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND NOT B(14) AND NOT A(14) AND 
+	NOT Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(14) AND A(14) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)));
+
+
+OUT(15) <= NOT (((NOT FUNC(1) AND B(15) AND B(14) AND NOT A(15) AND A(14))
+	OR (NOT FUNC(1) AND B(15) AND B(14) AND NOT A(15) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND B(15) AND NOT B(14) AND A(15) AND NOT A(14))
+	OR (NOT FUNC(1) AND B(15) AND NOT A(15) AND A(14) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(0) AND NOT B(15) AND NOT A(15) AND NOT A(14) AND 
+	NOT Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(0) AND NOT B(15) AND NOT B(14) AND NOT A(15) AND NOT A(14))
+	OR (NOT FUNC(0) AND NOT B(15) AND NOT B(14) AND NOT A(15) AND 
+	NOT Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(15) AND B(14) AND A(15) AND 
+	A(14))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(15) AND B(14) AND A(15) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(15) AND A(15) AND A(14) AND 
+	Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (FUNC(0) AND B(15))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT A(15))
+	OR (FUNC(1) AND NOT FUNC(0) AND NOT B(15) AND NOT A(15))
+	OR (NOT FUNC(1) AND B(15) AND NOT B(14) AND A(15) AND 
+	NOT Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)
+	OR (NOT FUNC(1) AND B(15) AND A(15) AND NOT A(14) AND 
+	NOT Madd_result_addsub0001__or0013/Madd_result_addsub0001__or0013_D2)));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-10-VQ64
+
+
+   -----------------------------------------------  
+  /48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 \
+ | 49                                           32 | 
+ | 50                                           31 | 
+ | 51                                           30 | 
+ | 52                                           29 | 
+ | 53                                           28 | 
+ | 54                                           27 | 
+ | 55                                           26 | 
+ | 56              XC9572XL-10-VQ64             25 | 
+ | 57                                           24 | 
+ | 58                                           23 | 
+ | 59                                           22 | 
+ | 60                                           21 | 
+ | 61                                           20 | 
+ | 62                                           19 | 
+ | 63                                           18 | 
+ | 64                                           17 | 
+ \ 1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 /
+   -----------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 OUT<14>                          33 FUNC<1>                       
+  2 A<10>                            34 A<14>                         
+  3 VCC                              35 A<7>                          
+  4 OUT<5>                           36 A<0>                          
+  5 A<11>                            37 VCC                           
+  6 A<3>                             38 B<14>                         
+  7 OUT<15>                          39 A<5>                          
+  8 A<8>                             40 OUT<12>                       
+  9 B<4>                             41 GND                           
+ 10 OUT<13>                          42 OUT<8>                        
+ 11 B<11>                            43 OUT<1>                        
+ 12 B<6>                             44 B<3>                          
+ 13 OUT<10>                          45 A<9>                          
+ 14 GND                              46 FUNC<0>                       
+ 15 B<12>                            47 B<1>                          
+ 16 B<0>                             48 A<2>                          
+ 17 B<15>                            49 OUT<4>                        
+ 18 B<9>                             50 OUT<7>                        
+ 19 B<7>                             51 OUT<6>                        
+ 20 B<8>                             52 A<4>                          
+ 21 GND                              53 TDO                           
+ 22 OUT<2>                           54 GND                           
+ 23 OUT<11>                          55 VCC                           
+ 24 OUT<3>                           56 A<13>                         
+ 25 A<6>                             57 B<5>                          
+ 26 VCC                              58 A<15>                         
+ 27 OUT<9>                           59 C_OUT                         
+ 28 TDI                              60 B<10>                         
+ 29 TMS                              61 A<1>                          
+ 30 TCK                              62 OUT<0>                        
+ 31 A<12>                            63 B<13>                         
+ 32 B<2>                             64 C_IN                          
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-10-VQ64
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 32
+Pterm Limit                                 : 25

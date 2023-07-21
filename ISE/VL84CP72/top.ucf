@@ -1,0 +1,57 @@
+#PINLOCK_BEGIN
+
+#Fri Jul 21 07:26:28 2023
+
+NET "A<0>"           LOC =  "S:PIN36";
+NET "A<10>"          LOC =  "S:PIN2";
+NET "A<11>"          LOC =  "S:PIN5";
+NET "A<12>"          LOC =  "S:PIN31";
+NET "A<13>"          LOC =  "S:PIN56";
+NET "A<14>"          LOC =  "S:PIN34";
+NET "A<15>"          LOC =  "S:PIN58";
+NET "A<1>"           LOC =  "S:PIN61";
+NET "A<2>"           LOC =  "S:PIN48";
+NET "A<3>"           LOC =  "S:PIN6";
+NET "A<4>"           LOC =  "S:PIN52";
+NET "A<5>"           LOC =  "S:PIN39";
+NET "A<6>"           LOC =  "S:PIN25";
+NET "A<7>"           LOC =  "S:PIN35";
+NET "A<8>"           LOC =  "S:PIN8";
+NET "A<9>"           LOC =  "S:PIN45";
+NET "B<0>"           LOC =  "S:PIN16";
+NET "B<10>"          LOC =  "S:PIN60";
+NET "B<11>"          LOC =  "S:PIN11";
+NET "B<12>"          LOC =  "S:PIN15";
+NET "B<13>"          LOC =  "S:PIN63";
+NET "B<14>"          LOC =  "S:PIN38";
+NET "B<15>"          LOC =  "S:PIN17";
+NET "B<1>"           LOC =  "S:PIN47";
+NET "B<2>"           LOC =  "S:PIN32";
+NET "B<3>"           LOC =  "S:PIN44";
+NET "B<4>"           LOC =  "S:PIN9";
+NET "B<5>"           LOC =  "S:PIN57";
+NET "B<6>"           LOC =  "S:PIN12";
+NET "B<7>"           LOC =  "S:PIN19";
+NET "B<8>"           LOC =  "S:PIN20";
+NET "B<9>"           LOC =  "S:PIN18";
+NET "C_IN"           LOC =  "S:PIN64";
+NET "FUNC<0>"        LOC =  "S:PIN46";
+NET "FUNC<1>"        LOC =  "S:PIN33";
+NET "C_OUT"          LOC =  "S:PIN59";
+NET "OUT<0>"         LOC =  "S:PIN62";
+NET "OUT<10>"        LOC =  "S:PIN13";
+NET "OUT<11>"        LOC =  "S:PIN23";
+NET "OUT<12>"        LOC =  "S:PIN40";
+NET "OUT<13>"        LOC =  "S:PIN10";
+NET "OUT<14>"        LOC =  "S:PIN1";
+NET "OUT<15>"        LOC =  "S:PIN7";
+NET "OUT<1>"         LOC =  "S:PIN43";
+NET "OUT<2>"         LOC =  "S:PIN22";
+NET "OUT<3>"         LOC =  "S:PIN24";
+NET "OUT<4>"         LOC =  "S:PIN49";
+NET "OUT<5>"         LOC =  "S:PIN4";
+NET "OUT<6>"         LOC =  "S:PIN51";
+NET "OUT<7>"         LOC =  "S:PIN50";
+NET "OUT<8>"         LOC =  "S:PIN42";
+NET "OUT<9>"         LOC =  "S:PIN27";
+#PINLOCK_END

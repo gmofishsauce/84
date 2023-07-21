@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "/home/ise/ISE/VL84CP02/top.xst" -ofn "/home/ise/ISE/VL84CP02/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/VL84CP02/top.xst" -ofn "/home/ise/ISE/VL84CP02/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/VL84CP02/top.xst" -ofn "/home/ise/ISE/VL84CP02/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/VL84CP02/top.xst" -ofn "/home/ise/ISE/VL84CP02/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+pin2ucf top.gyd -o /home/ise/ISE/VL84CP02/top.ucf -r top.lck 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+pin2ucf top.gyd -o /home/ise/ISE/VL84CP02/top.ucf -r top.lck 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 

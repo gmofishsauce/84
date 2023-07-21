@@ -3,7 +3,7 @@
 // Create Date:    16:50:24 07/12/2023 
 // Design Name:    register file, read one and write one per clock
 // Module Name:    top 
-// Project Name:   NARC (Not A Retro Computer)
+// Project Name:   
 // Target Devices: 64-pin XC9572XL
 // Tool versions:  ISE 14.7 in Linux VM
 // Description:
@@ -15,7 +15,6 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-(* LOCK_PINS = "all" *)
 module top
     (
     input  [15:0] A,

@@ -1,0 +1,93 @@
+Release 8.1i - Fit P.20131013
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 7-21-2023  7:37AM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  top.ngd
+output file: top.pad
+Part type:   xc9572xl
+Speed grade: -10
+Package:     vq64
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+P1|OUT<14>|O|I/O|OUTPUT|||||||||
+P2|A<10>|I|I/O/GTS2|INPUT|||||||||
+P3|VCC||VCCINT||||||||||
+P4|OUT<5>|O|I/O|OUTPUT|||||||||
+P5|A<11>|I|I/O/GTS1|INPUT|||||||||
+P6|A<3>|I|I/O|INPUT|||||||||
+P7|OUT<15>|O|I/O|OUTPUT|||||||||
+P8|A<8>|I|I/O|INPUT|||||||||
+P9|B<4>|I|I/O|INPUT|||||||||
+P10|OUT<13>|O|I/O|OUTPUT|||||||||
+P11|B<11>|I|I/O|INPUT|||||||||
+P12|B<6>|I|I/O|INPUT|||||||||
+P13|OUT<10>|O|I/O|OUTPUT|||||||||
+P14|GND||GND||||||||||
+P15|B<12>|I|I/O/GCK1|INPUT|||||||||
+P16|B<0>|I|I/O/GCK2|INPUT|||||||||
+P17|B<15>|I|I/O/GCK3|INPUT|||||||||
+P18|B<9>|I|I/O|INPUT|||||||||
+P19|B<7>|I|I/O|INPUT|||||||||
+P20|B<8>|I|I/O|INPUT|||||||||
+P21|GND||GND||||||||||
+P22|OUT<2>|O|I/O|OUTPUT|||||||||
+P23|OUT<11>|O|I/O|OUTPUT|||||||||
+P24|OUT<3>|O|I/O|OUTPUT|||||||||
+P25|A<6>|I|I/O|INPUT|||||||||
+P26|VCC||VCCIO||||||||||
+P27|OUT<9>|O|I/O|OUTPUT|||||||||
+P28|TDI||TDI||||||||||
+P29|TMS||TMS||||||||||
+P30|TCK||TCK||||||||||
+P31|A<12>|I|I/O|INPUT|||||||||
+P32|B<2>|I|I/O|INPUT|||||||||
+P33|FUNC<1>|I|I/O|INPUT|||||||||
+P34|A<14>|I|I/O|INPUT|||||||||
+P35|A<7>|I|I/O|INPUT|||||||||
+P36|A<0>|I|I/O|INPUT|||||||||
+P37|VCC||VCCINT||||||||||
+P38|B<14>|I|I/O|INPUT|||||||||
+P39|A<5>|I|I/O|INPUT|||||||||
+P40|OUT<12>|O|I/O|OUTPUT|||||||||
+P41|GND||GND||||||||||
+P42|OUT<8>|O|I/O|OUTPUT|||||||||
+P43|OUT<1>|O|I/O|OUTPUT|||||||||
+P44|B<3>|I|I/O|INPUT|||||||||
+P45|A<9>|I|I/O|INPUT|||||||||
+P46|FUNC<0>|I|I/O|INPUT|||||||||
+P47|B<1>|I|I/O|INPUT|||||||||
+P48|A<2>|I|I/O|INPUT|||||||||
+P49|OUT<4>|O|I/O|OUTPUT|||||||||
+P50|OUT<7>|O|I/O|OUTPUT|||||||||
+P51|OUT<6>|O|I/O|OUTPUT|||||||||
+P52|A<4>|I|I/O|INPUT|||||||||
+P53|TDO||TDO||||||||||
+P54|GND||GND||||||||||
+P55|VCC||VCCIO||||||||||
+P56|A<13>|I|I/O|INPUT|||||||||
+P57|B<5>|I|I/O|INPUT|||||||||
+P58|A<15>|I|I/O|INPUT|||||||||
+P59|C_OUT|O|I/O|OUTPUT|||||||||
+P60|B<10>|I|I/O|INPUT|||||||||
+P61|A<1>|I|I/O|INPUT|||||||||
+P62|OUT<0>|O|I/O|OUTPUT|||||||||
+P63|B<13>|I|I/O|INPUT|||||||||
+P64|C_IN|I|I/O/GSR|INPUT|||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

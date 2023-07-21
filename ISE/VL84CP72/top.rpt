@@ -1,0 +1,1414 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: top                                 Date:  7-21-2023,  7:37AM
+Device Used: XC9572XL-10-VQ64
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+35 /72  ( 49%) 320 /360  ( 89%) 117/216 ( 54%)   0  /72  (  0%) 52 /52  (100%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           5/18       33/54       81/90      13/13*
+FB2          11/18       27/54       86/90      13/13*
+FB3          11/18       33/54       84/90      14/14*
+FB4           8/18       24/54       69/90      12/12*
+             -----       -----       -----      -----    
+             35/72      117/216     320/360     52/52 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   35          35    |  I/O              :    46      46
+Output        :   17          17    |  GCK/IO           :     3       3
+Bidirectional :    0           0    |  GTS/IO           :     2       2
+GCK           :    0           0    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     52          52
+
+** Power Data **
+
+There are 35 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'top.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 17 Outputs **
+
+Signal                                                                                               Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                                                                                 Pts   Inps          No.  Type    Use     Mode Rate State
+OUT<10>                                                                                              10    9     FB1_4   13   I/O     O       STD  FAST 
+OUT<13>                                                                                              16    7     FB1_6   10   I/O     O       STD  FAST 
+OUT<11>                                                                                              12    11    FB1_12  23   I/O     O       STD  FAST 
+C_OUT                                                                                                16    11    FB2_4   59   I/O     O       STD  FAST 
+OUT<0>                                                                                               8     5     FB2_6   62   I/O     O       STD  FAST 
+OUT<14>                                                                                              18    9     FB2_10  1    I/O     O       STD  FAST 
+OUT<5>                                                                                               8     7     FB2_12  4    I/O     O       STD  FAST 
+OUT<15>                                                                                              19    12    FB2_17  7    I/O     O       STD  FAST 
+OUT<2>                                                                                               8     5     FB3_2   22   I/O     O       STD  FAST 
+OUT<3>                                                                                               8     5     FB3_5   24   I/O     O       STD  FAST 
+OUT<9>                                                                                               8     7     FB3_9   27   I/O     O       STD  FAST 
+OUT<12>                                                                                              8     5     FB3_12  40   I/O     O       STD  FAST 
+OUT<8>                                                                                               6     5     FB3_16  42   I/O     O       STD  FAST 
+OUT<1>                                                                                               16    7     FB4_2   43   I/O     O       STD  FAST 
+OUT<4>                                                                                               6     5     FB4_6   49   I/O     O       STD  FAST 
+OUT<6>                                                                                               6     5     FB4_10  51   I/O     O       STD  FAST 
+OUT<7>                                                                                               6     5     FB4_14  50   I/O     O       STD  FAST 
+
+** 18 Buried Nodes **
+
+Signal                                                                                               Total Total Loc     Pwr  Reg Init
+Name                                                                                                 Pts   Inps          Mode State
+Madd_raw_sum_addsub0000__or0006/Madd_raw_sum_addsub0000__or0006_D2                                   19    15    FB1_1   STD  
+Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2                                   24    25    FB1_14  STD  
+Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000_D  2     2     FB2_2   STD  
+Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000_D  2     2     FB2_3   STD  
+Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000_D  2     2     FB2_8   STD  
+Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000_D    2     2     FB2_9   STD  
+Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000_D    2     2     FB2_14  STD  
+Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2                                   7     5     FB2_18  STD  
+Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000_D    2     2     FB3_3   STD  
+Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000_D    2     2     FB3_4   STD  
+Madd_raw_sum_addsub0000__or0005/Madd_raw_sum_addsub0000__or0005_D2                                   18    13    FB3_7   STD  
+Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000_D    2     2     FB3_11  STD  
+Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000_D    2     2     FB3_13  STD  
+Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2                                   20    17    FB3_18  STD  
+Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000_D  2     2     FB4_4   STD  
+Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000_D    2     2     FB4_5   STD  
+Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2                                   15    7     FB4_8   STD  
+Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2                                   16    9     FB4_17  STD  
+
+** 35 Inputs **
+
+Signal                                                                                               Loc     Pin  Pin     Pin     
+Name                                                                                                         No.  Type    Use     
+A<8>                                                                                                 FB1_2   8    I/O     I
+B<6>                                                                                                 FB1_3   12   I/O     I
+B<4>                                                                                                 FB1_5   9    I/O     I
+B<11>                                                                                                FB1_8   11   I/O     I
+B<12>                                                                                                FB1_9   15   GCK/I/O I
+B<9>                                                                                                 FB1_10  18   I/O     I
+B<0>                                                                                                 FB1_11  16   GCK/I/O I
+B<15>                                                                                                FB1_14  17   GCK/I/O I
+B<7>                                                                                                 FB1_15  19   I/O     I
+B<8>                                                                                                 FB1_17  20   I/O     I
+B<10>                                                                                                FB2_2   60   I/O     I
+A<15>                                                                                                FB2_3   58   I/O     I
+A<1>                                                                                                 FB2_5   61   I/O     I
+B<13>                                                                                                FB2_8   63   I/O     I
+C_IN                                                                                                 FB2_9   64   GSR/I/O I
+A<10>                                                                                                FB2_11  2    GTS/I/O I
+A<11>                                                                                                FB2_14  5    GTS/I/O I
+A<3>                                                                                                 FB2_15  6    I/O     I
+A<12>                                                                                                FB3_3   31   I/O     I
+B<2>                                                                                                 FB3_4   32   I/O     I
+A<14>                                                                                                FB3_6   34   I/O     I
+A<6>                                                                                                 FB3_8   25   I/O     I
+A<5>                                                                                                 FB3_10  39   I/O     I
+FUNC<1>                                                                                              FB3_11  33   I/O     I
+A<7>                                                                                                 FB3_14  35   I/O     I
+A<0>                                                                                                 FB3_15  36   I/O     I
+B<14>                                                                                                FB3_17  38   I/O     I
+FUNC<0>                                                                                              FB4_3   46   I/O     I
+B<1>                                                                                                 FB4_4   47   I/O     I
+B<3>                                                                                                 FB4_5   44   I/O     I
+A<9>                                                                                                 FB4_8   45   I/O     I
+A<2>                                                                                                 FB4_11  48   I/O     I
+A<4>                                                                                                 FB4_12  52   I/O     I
+A<13>                                                                                                FB4_15  56   I/O     I
+B<5>                                                                                                 FB4_17  57   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               33/21
+Number of signals used by logic mapping into function block:  33
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+Madd_raw_sum_addsub0000__or0006/Madd_raw_sum_addsub0000__or0006_D2
+                     19      14<-   0   0     FB1_1         (b)     (b)
+(unused)              0       0   /\5   0     FB1_2   8     I/O     I
+(unused)              0       0   /\4   1     FB1_3   12    I/O     I
+OUT<10>              10       5<-   0   0     FB1_4   13    I/O     O
+(unused)              0       0   /\5   0     FB1_5   9     I/O     I
+OUT<13>              16      11<-   0   0     FB1_6   10    I/O     O
+(unused)              0       0   /\5   0     FB1_7         (b)     (b)
+(unused)              0       0   /\5   0     FB1_8   11    I/O     I
+(unused)              0       0   /\1   4     FB1_9   15    GCK/I/O I
+(unused)              0       0   \/5   0     FB1_10  18    I/O     I
+(unused)              0       0   \/5   0     FB1_11  16    GCK/I/O I
+OUT<11>              12      10<- \/3   0     FB1_12  23    I/O     O
+(unused)              0       0   \/5   0     FB1_13        (b)     (b)
+Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2
+                     24      19<-   0   0     FB1_14  17    GCK/I/O I
+(unused)              0       0   /\5   0     FB1_15  19    I/O     I
+(unused)              0       0   /\5   0     FB1_16        (b)     (b)
+(unused)              0       0   /\1   4     FB1_17  20    I/O     I
+(unused)              0       0   \/5   0     FB1_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>              12: A<7>              23: Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000_D 
+  2: A<10>             13: A<8>              24: Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000_D 
+  3: A<11>             14: A<9>              25: Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000_D 
+  4: A<12>             15: B<0>              26: Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000_D 
+  5: A<13>             16: B<12>             27: Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000_D 
+  6: A<1>              17: B<13>             28: Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000_D 
+  7: A<2>              18: B<1>              29: Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000_D 
+  8: A<3>              19: B<2>              30: Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000_D 
+  9: A<4>              20: C_IN              31: Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000_D 
+ 10: A<5>              21: FUNC<0>           32: Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 
+ 11: A<6>              22: FUNC<1>           33: Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Madd_raw_sum_addsub0000__or0006/Madd_raw_sum_addsub0000__or0006_D2 
+                     X....XXXXXX...X..XXX....XXXX............ 15
+OUT<10>              .X..........XX......XXX......XXX........ 9
+OUT<13>              ...XX..........XX...XX..........X....... 7
+OUT<11>              .XX.........XX......XXXX.....XXX........ 11
+Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 
+                     XXX..XXXXXXXXXX..XXX..XXXXXXXXX......... 25
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\5   0     FB2_1         (b)     (b)
+Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000_D
+                      2       0   /\1   2     FB2_2   60    I/O     I
+Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000_D
+                      2       0   \/3   0     FB2_3   58    I/O     I
+C_OUT                16      11<-   0   0     FB2_4   59    I/O     O
+(unused)              0       0   /\5   0     FB2_5   61    I/O     I
+OUT<0>                8       6<- /\3   0     FB2_6   62    I/O     O
+(unused)              0       0   /\5   0     FB2_7         (b)     (b)
+Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000_D
+                      2       0   /\1   2     FB2_8   63    I/O     I
+Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000_D
+                      2       0   \/3   0     FB2_9   64    GSR/I/O I
+OUT<14>              18      13<-   0   0     FB2_10  1     I/O     O
+(unused)              0       0   /\5   0     FB2_11  2     GTS/I/O I
+OUT<5>                8       8<- /\5   0     FB2_12  4     I/O     O
+(unused)              0       0   /\5   0     FB2_13        (b)     (b)
+Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000_D
+                      2       0   /\3   0     FB2_14  5     GTS/I/O I
+(unused)              0       0   \/5   0     FB2_15  6     I/O     I
+(unused)              0       0   \/5   0     FB2_16        (b)     (b)
+OUT<15>              19      14<-   0   0     FB2_17  7     I/O     O
+Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2
+                      7       6<- /\4   0     FB2_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>              10: B<0>              19: C_IN 
+  2: A<10>             11: B<10>             20: FUNC<0> 
+  3: A<12>             12: B<12>             21: FUNC<1> 
+  4: A<13>             13: B<13>             22: Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000_D 
+  5: A<14>             14: B<14>             23: Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000_D 
+  6: A<15>             15: B<15>             24: Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000_D 
+  7: A<1>              16: B<1>              25: Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000_D 
+  8: A<4>              17: B<4>              26: Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2 
+  9: A<5>              18: B<5>              27: Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<10>__xor0000_D 
+                     .X........X............................. 2
+Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<14>__xor0000_D 
+                     ....X........X.......................... 2
+C_OUT                ..XXXX.....XXX.....XX.X...X............. 11
+OUT<0>               X........X........XXX................... 5
+Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<15>__xor0000_D 
+                     .....X........X......................... 2
+Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000_D 
+                     .......X........X....................... 2
+OUT<14>              ..XXX......XX......XXX....X............. 9
+OUT<5>               .......XX..........XX..XXX.............. 7
+Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000_D 
+                     ........X........X...................... 2
+OUT<15>              ..XXXX.....XX.X....XXXX...X............. 12
+Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2 
+                     X.....X..X.....X..X..................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               33/21
+Number of signals used by logic mapping into function block:  33
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\5   0     FB3_1         (b)     (b)
+OUT<2>                8       3<-   0   0     FB3_2   22    I/O     O
+Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000_D
+                      2       0   /\3   0     FB3_3   31    I/O     I
+Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000_D
+                      2       0   \/3   0     FB3_4   32    I/O     I
+OUT<3>                8       3<-   0   0     FB3_5   24    I/O     O
+(unused)              0       0   \/5   0     FB3_6   34    I/O     I
+Madd_raw_sum_addsub0000__or0005/Madd_raw_sum_addsub0000__or0005_D2
+                     18      13<-   0   0     FB3_7         (b)     (b)
+(unused)              0       0   /\5   0     FB3_8   25    I/O     I
+OUT<9>                8       6<- /\3   0     FB3_9   27    I/O     O
+(unused)              0       0   /\5   0     FB3_10  39    I/O     I
+Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000_D
+                      2       0   /\1   2     FB3_11  33    I/O     I
+OUT<12>               8       3<-   0   0     FB3_12  40    I/O     O
+Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000_D
+                      2       0   /\3   0     FB3_13        (b)     (b)
+(unused)              0       0   \/1   4     FB3_14  35    I/O     I
+(unused)              0       0   \/5   0     FB3_15  36    I/O     I
+OUT<8>                6       6<- \/5   0     FB3_16  42    I/O     O
+(unused)              0       0   \/5   0     FB3_17  38    I/O     I
+Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2
+                     20      15<-   0   0     FB3_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>              12: B<0>              23: Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000_D 
+  2: A<12>             13: B<12>             24: Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000_D 
+  3: A<1>              14: B<1>              25: Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<5>__xor0000_D 
+  4: A<2>              15: B<2>              26: Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000_D 
+  5: A<3>              16: B<3>              27: Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000_D 
+  6: A<4>              17: B<6>              28: Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000_D 
+  7: A<5>              18: B<7>              29: Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000_D 
+  8: A<6>              19: B<8>              30: Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2 
+  9: A<7>              20: C_IN              31: Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2 
+ 10: A<8>              21: FUNC<0>           32: Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 
+ 11: A<9>              22: FUNC<1>           33: Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+OUT<2>               ...X..........X.....XX.......X.......... 5
+Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000_D 
+                     ....X..........X........................ 2
+Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000_D 
+                     .......X........X....................... 2
+OUT<3>               ....X..........X....XX........X......... 5
+Madd_raw_sum_addsub0000__or0005/Madd_raw_sum_addsub0000__or0005_D2 
+                     X.XXXXX....X.XX....X..XXX............... 13
+OUT<9>               .........XX.........XX.....XX..X........ 7
+Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000_D 
+                     ........X........X...................... 2
+OUT<12>              .X..........X.......XX..........X....... 5
+Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<8>__xor0000_D 
+                     .........X........X..................... 2
+OUT<8>               .........X..........XX.....X...X........ 5
+Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 
+                     X.XXXXXXX..X.XX....X..XXXXX............. 17
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               24/30
+Number of signals used by logic mapping into function block:  24
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/5   0     FB4_1         (b)     (b)
+OUT<1>               16      11<-   0   0     FB4_2   43    I/O     O
+(unused)              0       0   /\5   0     FB4_3   46    I/O     I
+Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000_D
+                      2       0   /\1   2     FB4_4   47    I/O     I
+Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000_D
+                      2       0   \/1   2     FB4_5   44    I/O     I
+OUT<4>                6       1<-   0   0     FB4_6   49    I/O     O
+(unused)              0       0   \/5   0     FB4_7         (b)     (b)
+Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2
+                     15      10<-   0   0     FB4_8   45    I/O     I
+(unused)              0       0   /\5   0     FB4_9         (b)     (b)
+OUT<6>                6       1<-   0   0     FB4_10  51    I/O     O
+(unused)              0       0   /\1   4     FB4_11  48    I/O     I
+(unused)              0       0     0   5     FB4_12  52    I/O     I
+(unused)              0       0   \/1   4     FB4_13        (b)     (b)
+OUT<7>                6       1<-   0   0     FB4_14  50    I/O     O
+(unused)              0       0   \/1   4     FB4_15  56    I/O     I
+(unused)              0       0   \/5   0     FB4_16        (b)     (b)
+Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2
+                     16      11<-   0   0     FB4_17  57    I/O     I
+(unused)              0       0   /\5   0     FB4_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>               9: A<9>              17: FUNC<1> 
+  2: A<11>             10: B<0>              18: Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<3>__xor0000_D 
+  3: A<1>              11: B<11>             19: Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<4>__xor0000_D 
+  4: A<2>              12: B<1>              20: Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<6>__xor0000_D 
+  5: A<3>              13: B<2>              21: Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<7>__xor0000_D 
+  6: A<4>              14: B<9>              22: Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2 
+  7: A<6>              15: C_IN              23: Madd_raw_sum_addsub0000__or0005/Madd_raw_sum_addsub0000__or0005_D2 
+  8: A<7>              16: FUNC<0>           24: Madd_raw_sum_addsub0000__or0006/Madd_raw_sum_addsub0000__or0006_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+OUT<1>               X.X......X.X..XXX....................... 7
+Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<11>__xor0000_D 
+                     .X........X............................. 2
+Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000/Madd_raw_sum_addsub0000_Mxor_Result<9>__xor0000_D 
+                     ........X....X.......................... 2
+OUT<4>               .....X.........XX.X..X.................. 5
+Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2 
+                     X.XX.....X.XX.X......................... 7
+OUT<6>               ......X........XX..X..X................. 5
+OUT<7>               .......X.......XX...X..X................ 5
+Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2 
+                     X.XXX....X.XX.X..X...................... 9
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+C_OUT <= ((NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND B(13) AND B(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND B(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND B(12) AND NOT A(13) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (OUT_0_OBUF.EXP)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND NOT A(14) AND NOT A(13) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND B(13) AND B(12) AND 
+	NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND B(12) AND NOT A(13) AND 
+	NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND B(12) AND NOT A(14) AND 
+	NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(12) AND NOT A(14) AND NOT A(13) AND 
+	NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(14) AND NOT A(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND B(12) AND NOT A(14) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND NOT A(14) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(12) AND NOT A(14) AND NOT A(13) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT A(14) AND NOT A(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D <= NOT (B(3)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D <= NOT (A(3));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D <= NOT (B(4)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D <= NOT (A(4));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D <= NOT (B(5)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D <= NOT (A(5));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D <= NOT (B(6)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D <= NOT (A(6));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D <= NOT (B(7)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D <= NOT (A(7));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D <= NOT (B(8)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D <= NOT (A(8));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D <= NOT (B(9)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D <= NOT (A(9));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D <= NOT (B(10)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D <= NOT (A(10));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D <= NOT (B(11)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D <= NOT (A(11));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D <= NOT (B(14)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D <= NOT (A(14));
+
+
+Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D <= NOT (B(15)
+	 XOR 
+Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D <= NOT (A(15));
+
+
+Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2 <= ((
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D.EXP)
+	OR (B(1) AND B(0) AND NOT A(0))
+	OR (B(1) AND C_IN AND NOT A(0))
+	OR (B(0) AND C_IN AND NOT A(1))
+	OR (B(0) AND NOT A(1) AND NOT A(0))
+	OR (C_IN AND NOT A(1) AND NOT A(0))
+	OR (B(1) AND NOT A(1)));
+
+
+Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2 <= ((B(2) AND NOT A(2))
+	OR (B(2) AND B(1) AND NOT A(1))
+	OR (B(2) AND B(0) AND NOT A(1) AND NOT A(0))
+	OR (B(1) AND B(0) AND C_IN AND NOT A(2))
+	OR (B(1) AND C_IN AND NOT A(2) AND NOT A(0))
+	OR (B(2) AND B(1) AND B(0) AND C_IN)
+	OR (B(2) AND B(1) AND B(0) AND NOT A(0))
+	OR (B(2) AND B(1) AND C_IN AND NOT A(0))
+	OR (B(2) AND B(0) AND C_IN AND NOT A(1))
+	OR (B(2) AND C_IN AND NOT A(1) AND NOT A(0))
+	OR (B(1) AND NOT A(2) AND NOT A(1))
+	OR (B(1) AND B(0) AND NOT A(2) AND NOT A(0))
+	OR (B(0) AND C_IN AND NOT A(2) AND NOT A(1))
+	OR (B(0) AND NOT A(2) AND NOT A(1) AND NOT A(0))
+	OR (C_IN AND NOT A(2) AND NOT A(1) AND NOT A(0)));
+
+
+Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2 <= ((EXP39_.EXP)
+	OR (B(2) AND B(1) AND B(0) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND C_IN AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND NOT A(2) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(0) AND C_IN AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (NOT A(3) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(1) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(2) AND B(0) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND B(0) AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(1) AND C_IN AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (B(0) AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D)
+	OR (C_IN AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D));
+
+
+Madd_raw_sum_addsub0000__or0005/Madd_raw_sum_addsub0000__or0005_D2 <= ((B(2) AND B(1) AND B(0) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND C_IN AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND NOT A(2) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(0) AND C_IN AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (OUT_9_OBUF.EXP)
+	OR (NOT A(5) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(1) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(2) AND B(0) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND B(0) AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(1) AND C_IN AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (B(0) AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (C_IN AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D));
+
+
+Madd_raw_sum_addsub0000__or0006/Madd_raw_sum_addsub0000__or0006_D2 <= ((EXP7_.EXP)
+	OR (NOT A(6) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(1) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND C_IN AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND NOT A(2) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(0) AND C_IN AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(2) AND B(0) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND B(0) AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(1) AND C_IN AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (B(0) AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (C_IN AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D));
+
+
+Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 <= ((NOT A(7) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(1) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (OUT_8_OBUF.EXP)
+	OR (B(2) AND B(1) AND B(0) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND C_IN AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND NOT A(2) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(0) AND C_IN AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(2) AND B(0) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND B(0) AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(1) AND C_IN AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (B(0) AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (C_IN AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D));
+
+
+Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 <= ((OUT_11_OBUF.EXP)
+	OR (B(2) AND B(1) AND B(0) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(1) AND C_IN AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND C_IN AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND B(0) AND C_IN AND NOT A(2) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(0) AND C_IN AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (EXP16_.EXP)
+	OR (NOT A(11) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(1) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND NOT A(2) AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(1) AND B(0) AND C_IN AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(0) AND C_IN AND NOT A(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(2) AND B(0) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND B(0) AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(1) AND C_IN AND NOT A(2) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (B(0) AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (C_IN AND NOT A(2) AND NOT A(1) AND NOT A(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(3)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D));
+
+
+OUT(0) <= ((
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D.EXP)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(0))
+	OR (FUNC(1) AND B(0) AND A(0))
+	OR (FUNC(0) AND B(0) AND NOT A(0))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT B(0) AND A(0))
+	OR (NOT FUNC(1) AND B(0) AND NOT C_IN AND NOT A(0))
+	OR (NOT FUNC(1) AND NOT B(0) AND NOT C_IN AND A(0))
+	OR (NOT FUNC(0) AND B(0) AND C_IN AND A(0)));
+
+
+OUT(1) <= ((NOT FUNC(0) AND B(1) AND B(0) AND A(1) AND NOT A(0))
+	OR (NOT FUNC(0) AND B(1) AND C_IN AND A(1) AND NOT A(0))
+	OR (NOT FUNC(0) AND NOT B(1) AND NOT B(0) AND NOT C_IN AND A(1))
+	OR (NOT FUNC(0) AND NOT B(1) AND NOT B(0) AND A(1) AND A(0))
+	OR (NOT FUNC(0) AND NOT B(1) AND NOT C_IN AND A(1) AND A(0))
+	OR (
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D.EXP)
+	OR (NOT FUNC(1) AND B(1) AND NOT B(0) AND NOT C_IN AND NOT A(1))
+	OR (NOT FUNC(1) AND B(1) AND NOT B(0) AND NOT A(1) AND A(0))
+	OR (NOT FUNC(1) AND B(1) AND NOT C_IN AND NOT A(1) AND A(0))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(1) AND B(0) AND C_IN AND NOT A(1))
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(1) AND C_IN AND NOT A(1) AND NOT A(0))
+	OR (FUNC(1) AND NOT FUNC(0) AND A(1))
+	OR (FUNC(1) AND B(1) AND A(1))
+	OR (FUNC(0) AND B(1) AND NOT A(1))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT B(1) AND A(1))
+	OR (NOT FUNC(0) AND B(1) AND B(0) AND C_IN AND A(1)));
+
+
+OUT(2) <= ((FUNC(1) AND NOT FUNC(0) AND A(2))
+	OR (FUNC(1) AND B(2) AND A(2))
+	OR (NOT FUNC(0) AND B(2) AND A(2) AND 
+	Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2)
+	OR (FUNC(0) AND B(2) AND NOT A(2))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT B(2) AND A(2))
+	OR (NOT FUNC(1) AND B(2) AND NOT A(2) AND 
+	NOT Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2)
+	OR (NOT FUNC(1) AND NOT B(2) AND A(2) AND 
+	NOT Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(2) AND NOT A(2) AND 
+	Madd_raw_sum_addsub0000__or0001/Madd_raw_sum_addsub0000__or0001_D2));
+
+
+OUT(3) <= ((FUNC(1) AND NOT FUNC(0) AND A(3))
+	OR (FUNC(1) AND B(3) AND A(3))
+	OR (NOT FUNC(0) AND B(3) AND A(3) AND 
+	Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2)
+	OR (FUNC(0) AND B(3) AND NOT A(3))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT B(3) AND A(3))
+	OR (NOT FUNC(1) AND B(3) AND NOT A(3) AND 
+	NOT Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2)
+	OR (NOT FUNC(1) AND NOT B(3) AND A(3) AND 
+	NOT Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(3) AND NOT A(3) AND 
+	Madd_raw_sum_addsub0000__or0002/Madd_raw_sum_addsub0000__or0002_D2));
+
+
+OUT(4) <= ((NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(4))
+	OR (FUNC(1) AND A(4) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2)
+	OR (FUNC(0) AND NOT A(4) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D));
+
+
+OUT(5) <= ((
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D.EXP)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(5))
+	OR (FUNC(1) AND A(5) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (FUNC(0) AND NOT A(5) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(4)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(5)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000__or0003/Madd_raw_sum_addsub0000__or0003_D2));
+
+
+OUT(6) <= ((NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	Madd_raw_sum_addsub0000__or0005/Madd_raw_sum_addsub0000__or0005_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(6))
+	OR (FUNC(1) AND A(6) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000__or0005/Madd_raw_sum_addsub0000__or0005_D2)
+	OR (FUNC(0) AND NOT A(6) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(6)__xor0000_D));
+
+
+OUT(7) <= ((NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	Madd_raw_sum_addsub0000__or0006/Madd_raw_sum_addsub0000__or0006_D2)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(7))
+	OR (FUNC(1) AND A(7) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000__or0006/Madd_raw_sum_addsub0000__or0006_D2)
+	OR (FUNC(0) AND NOT A(7) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D));
+
+
+OUT(8) <= ((EXP30_.EXP)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(8))
+	OR (FUNC(1) AND A(8) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D)
+	OR (FUNC(0) AND NOT A(8) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D));
+
+
+OUT(9) <= ((
+	Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(7)__xor0000_D.EXP)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(9))
+	OR (FUNC(0) AND NOT A(9) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D)
+	OR (NOT FUNC(1) AND A(8) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D)
+	OR (FUNC(1) AND A(9) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D));
+
+
+OUT(10) <= ((NOT FUNC(1) AND NOT FUNC(0) AND NOT A(9) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND A(8) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND 
+	NOT Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT A(8) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND 
+	Madd_raw_sum_addsub0000__or0007/Madd_raw_sum_addsub0000__or0007_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(8)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(10))
+	OR (FUNC(1) AND A(10) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (FUNC(0) AND NOT A(10) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D)
+	OR (NOT FUNC(1) AND A(9) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D));
+
+
+OUT(11) <= ((EXP12_.EXP)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(11))
+	OR (FUNC(0) AND NOT A(11) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND A(10) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT A(10) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND A(9) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(9)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(10)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (FUNC(1) AND A(11) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(11)__xor0000_D));
+
+
+OUT(12) <= ((FUNC(1) AND NOT FUNC(0) AND A(12))
+	OR (FUNC(1) AND B(12) AND A(12))
+	OR (NOT FUNC(0) AND B(12) AND A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2)
+	OR (FUNC(0) AND B(12) AND NOT A(12))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT B(12) AND A(12))
+	OR (NOT FUNC(1) AND B(12) AND NOT A(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2)
+	OR (NOT FUNC(1) AND NOT B(12) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT B(12) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2));
+
+
+OUT(13) <= ((EXP10_.EXP)
+	OR (FUNC(1) AND NOT FUNC(0) AND A(13))
+	OR (FUNC(0) AND B(13) AND NOT A(13))
+	OR (NOT FUNC(1) AND FUNC(0) AND NOT B(13) AND A(13))
+	OR (NOT FUNC(1) AND NOT B(13) AND NOT B(12) AND A(13) AND A(12))
+	OR (NOT FUNC(0) AND B(13) AND B(12) AND A(13) AND NOT A(12))
+	OR (FUNC(1) AND B(13) AND A(13))
+	OR (NOT FUNC(1) AND NOT B(13) AND NOT B(12) AND A(13) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2)
+	OR (NOT FUNC(1) AND NOT B(13) AND A(13) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2)
+	OR (NOT FUNC(0) AND B(13) AND B(12) AND A(13) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2)
+	OR (NOT FUNC(0) AND B(13) AND A(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2));
+
+
+OUT(14) <= ((NOT FUNC(1) AND NOT B(12) AND A(13) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND B(12) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(12) AND NOT A(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (OUT_5_OBUF.EXP)
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(13) AND NOT B(12) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(12) AND A(13) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND B(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(12) AND NOT A(13) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(13) AND NOT B(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(13) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND A(13) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT A(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D));
+
+
+OUT(15) <= ((EXP24_.EXP)
+	OR (NOT FUNC(1) AND NOT B(13) AND NOT B(12) AND A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(12) AND A(13) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND B(12) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(12) AND NOT A(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(12) AND NOT A(13) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (FUNC(1) AND FUNC(0) AND B(15))
+	OR (NOT FUNC(1) AND FUNC(0) AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(12) AND A(13) AND A(12) AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND B(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(13) AND NOT B(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT B(13) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND A(13) AND A(12) AND 
+	NOT Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	NOT Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND B(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D)
+	OR (NOT FUNC(1) AND NOT FUNC(0) AND NOT A(13) AND NOT A(12) AND 
+	Madd_raw_sum_addsub0000__or0011/Madd_raw_sum_addsub0000__or0011_D2 AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(14)__xor0000_D AND 
+	Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000/Madd_raw_sum_addsub0000_Mxor_Result(15)__xor0000_D));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-10-VQ64
+
+
+   -----------------------------------------------  
+  /48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 \
+ | 49                                           32 | 
+ | 50                                           31 | 
+ | 51                                           30 | 
+ | 52                                           29 | 
+ | 53                                           28 | 
+ | 54                                           27 | 
+ | 55                                           26 | 
+ | 56              XC9572XL-10-VQ64             25 | 
+ | 57                                           24 | 
+ | 58                                           23 | 
+ | 59                                           22 | 
+ | 60                                           21 | 
+ | 61                                           20 | 
+ | 62                                           19 | 
+ | 63                                           18 | 
+ | 64                                           17 | 
+ \ 1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 /
+   -----------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 OUT<14>                          33 FUNC<1>                       
+  2 A<10>                            34 A<14>                         
+  3 VCC                              35 A<7>                          
+  4 OUT<5>                           36 A<0>                          
+  5 A<11>                            37 VCC                           
+  6 A<3>                             38 B<14>                         
+  7 OUT<15>                          39 A<5>                          
+  8 A<8>                             40 OUT<12>                       
+  9 B<4>                             41 GND                           
+ 10 OUT<13>                          42 OUT<8>                        
+ 11 B<11>                            43 OUT<1>                        
+ 12 B<6>                             44 B<3>                          
+ 13 OUT<10>                          45 A<9>                          
+ 14 GND                              46 FUNC<0>                       
+ 15 B<12>                            47 B<1>                          
+ 16 B<0>                             48 A<2>                          
+ 17 B<15>                            49 OUT<4>                        
+ 18 B<9>                             50 OUT<7>                        
+ 19 B<7>                             51 OUT<6>                        
+ 20 B<8>                             52 A<4>                          
+ 21 GND                              53 TDO                           
+ 22 OUT<2>                           54 GND                           
+ 23 OUT<11>                          55 VCC                           
+ 24 OUT<3>                           56 A<13>                         
+ 25 A<6>                             57 B<5>                          
+ 26 VCC                              58 A<15>                         
+ 27 OUT<9>                           59 C_OUT                         
+ 28 TDI                              60 B<10>                         
+ 29 TMS                              61 A<1>                          
+ 30 TCK                              62 OUT<0>                        
+ 31 A<12>                            63 B<13>                         
+ 32 B<2>                             64 C_IN                          
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-10-VQ64
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 32
+Pterm Limit                                 : 25

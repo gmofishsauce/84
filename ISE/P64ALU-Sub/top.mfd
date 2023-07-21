@@ -1,0 +1,1228 @@
+MDF Database:  version 1.0
+MDF_INFO | top | XC9572XL-10-VQ64
+MACROCELL | 0 | 9 | OUT_0_OBUF
+ATTRIBUTES | 264962 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 19 | FUNC<0>  | B<0>  | A<0>  | FUNC<1>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<13>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>  | C_IN  | EXP12_.EXP
+INPUTMC | 1 | 0 | 10
+INPUTP | 18 | 72 | 3 | 86 | 67 | 13 | 10 | 7 | 82 | 65 | 24 | 50 | 63 | 52 | 62 | 90 | 20 | 17 | 49
+EXPORTS | 1 | 0 | 8
+IMPORTS | 1 | 0 | 10
+EQ | 15 | 
+   OUT<0> = FUNC<1> & !FUNC<0> & A<0>
+	# FUNC<1> & B<0> & A<0>
+	# FUNC<0> & B<0> & !A<0>
+;Imported pterms FB1_11
+	# !FUNC<1> & FUNC<0> & !B<0> & A<0>
+	# !FUNC<1> & B<0> & !C_IN & !A<0>
+	# !FUNC<0> & B<0> & C_IN & A<0>
+	# !FUNC<0> & !B<0> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<0> & C_IN & !A<0>;
+    OUT_0_OBUF.EXP  =  !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<13> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & C_IN & !A<0>
+
+MACROCELL | 1 | 11 | OUT_10_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 18 | FUNC<1>  | FUNC<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>  | C_IN  | A<0>  | B<0>  | A<10>  | EXP21_.EXP  | EXP22_.EXP
+INPUTMC | 2 | 1 | 10 | 1 | 12
+INPUTP | 16 | 67 | 72 | 13 | 10 | 7 | 82 | 65 | 52 | 62 | 90 | 20 | 17 | 49 | 86 | 3 | 66
+IMPORTS | 2 | 1 | 10 | 1 | 12
+EQ | 28 | 
+   OUT<10> = FUNC<1> & !FUNC<0> & A<10>
+	# FUNC<1> & B<10> & A<10>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<10> & B<9> & B<8> & B<7> & B<6> & 
+	C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<10> & B<9> & B<8> & B<7> & B<6> & 
+	!A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<10> & B<9> & B<8> & B<7> & B<6> & C_IN & 
+	!A<0>
+;Imported pterms FB2_11
+	# FUNC<0> & B<10> & !A<10>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<10>
+;Imported pterms FB2_10
+	# !FUNC<1> & FUNC<0> & !B<10> & A<10>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<10> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<10> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !C_IN & A<0>
+;Imported pterms FB2_13
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<6>;
+
+MACROCELL | 1 | 5 | OUT_11_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 19 | FUNC<1>  | FUNC<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>  | C_IN  | A<0>  | B<0>  | A<11>  | EXP17_.EXP  | EXP18_.EXP
+INPUTMC | 2 | 1 | 4 | 1 | 6
+INPUTP | 17 | 67 | 72 | 13 | 10 | 7 | 82 | 65 | 63 | 52 | 62 | 90 | 20 | 17 | 49 | 86 | 3 | 47
+IMPORTS | 2 | 1 | 4 | 1 | 6
+EQ | 29 | 
+   OUT<11> = FUNC<1> & !FUNC<0> & A<11>
+	# FUNC<1> & B<11> & A<11>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<11> & B<10> & B<9> & B<8> & B<7> & 
+	B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<11> & B<10> & B<9> & B<8> & B<7> & 
+	B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & 
+	C_IN & !A<0>
+;Imported pterms FB2_5
+	# FUNC<0> & B<11> & !A<11>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<11>
+;Imported pterms FB2_7
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<6>
+;Imported pterms FB2_8
+	# !FUNC<1> & FUNC<0> & !B<11> & A<11>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<11> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<11> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !C_IN & A<0>;
+
+MACROCELL | 1 | 1 | OUT_12_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<12>  | A<12>  | B<1>  | B<2>  | EXP14_.EXP  | EXP15_.EXP
+INPUTMC | 2 | 1 | 0 | 1 | 2
+INPUTP | 6 | 67 | 72 | 50 | 21 | 65 | 82
+IMPORTS | 2 | 1 | 0 | 1 | 2
+EQ | 31 | 
+   OUT<12> = FUNC<1> & FUNC<0> & B<12>
+	# FUNC<1> & !FUNC<0> & A<12>
+	# FUNC<0> & B<12> & !A<12>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<12>
+;Imported pterms FB2_1
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<6>
+;Imported pterms FB2_18
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<12> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<12> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & !A<0>
+;Imported pterms FB2_3
+	# !FUNC<1> & FUNC<0> & !B<12> & A<12>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<8>
+;Imported pterms FB2_4
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<12> & B<11> & B<10> & B<9> & B<8> & B<7> & 
+	B<6> & C_IN & !A<0>;
+
+MACROCELL | 0 | 7 | OUT_13_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<13>  | A<13>  | B<1>  | B<2>  | EXP10_.EXP  | EXP11_.EXP
+INPUTMC | 2 | 0 | 6 | 0 | 8
+INPUTP | 6 | 67 | 72 | 24 | 92 | 65 | 82
+IMPORTS | 2 | 0 | 6 | 0 | 8
+EQ | 32 | 
+   !OUT<13> = FUNC<1> & FUNC<0> & !B<13>
+	# FUNC<1> & !FUNC<0> & !A<13>
+	# FUNC<0> & !B<13> & !A<13>
+	# !FUNC<1> & !FUNC<0> & !B<2> & B<13>
+	# !FUNC<1> & !FUNC<0> & !B<1> & B<13>
+;Imported pterms FB1_7
+	# !FUNC<1> & !FUNC<0> & !B<5> & B<13>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<13>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<13>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<7>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<6>
+;Imported pterms FB1_6
+	# !FUNC<1> & FUNC<0> & B<13> & A<13>
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<13> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<13> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<13> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & !A<0>
+;Imported pterms FB1_9
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<12>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<11>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<10>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<9>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<8>
+;Imported pterms FB1_10
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<13> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & C_IN & !A<0>;
+
+MACROCELL | 0 | 1 | OUT_14_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<14>  | A<14>  | B<1>  | B<2>  | EXP6_.EXP  | EXP7_.EXP
+INPUTMC | 2 | 0 | 0 | 0 | 2
+INPUTP | 6 | 67 | 72 | 84 | 1 | 65 | 82
+IMPORTS | 2 | 0 | 0 | 0 | 2
+EQ | 33 | 
+   OUT<14> = FUNC<1> & FUNC<0> & B<14>
+	# FUNC<1> & !FUNC<0> & A<14>
+	# FUNC<0> & B<14> & !A<14>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<14>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<14>
+;Imported pterms FB1_1
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<14>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<14>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<14>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<6>
+;Imported pterms FB1_18
+	# !FUNC<1> & FUNC<0> & !B<14> & A<14>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<13>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<14> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<14> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !C_IN & A<0>
+;Imported pterms FB1_3
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<8>
+;Imported pterms FB1_4
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<14> & B<13> & B<12> & B<11> & B<10> & 
+	B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<14> & B<13> & B<12> & B<11> & B<10> & 
+	B<9> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<14> & B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & C_IN & !A<0>;
+
+MACROCELL | 3 | 16 | OUT_15_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<15>  | A<15>  | B<1>  | B<2>  | EXP46_.EXP  | EXP47_.EXP
+INPUTMC | 2 | 3 | 15 | 3 | 17
+INPUTP | 6 | 67 | 72 | 12 | 46 | 65 | 82
+IMPORTS | 2 | 3 | 15 | 3 | 17
+EQ | 34 | 
+   !OUT<15> = FUNC<1> & FUNC<0> & !B<15>
+	# FUNC<1> & !FUNC<0> & !A<15>
+	# FUNC<0> & !B<15> & !A<15>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<2>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<1>
+;Imported pterms FB4_16
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<5>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<4>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<3>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<7>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<6>
+;Imported pterms FB4_15
+	# !FUNC<1> & FUNC<0> & B<15> & A<15>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<14>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<13>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<15> & !C_IN & A<0>
+;Imported pterms FB4_18
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<12>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<11>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<10>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<9>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<8>
+;Imported pterms FB4_1
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<14> & B<13> & B<12> & B<11> & 
+	B<10> & B<9> & B<8> & B<7> & B<6> & C_IN & !A<0>;
+
+MACROCELL | 3 | 11 | OUT_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | FUNC<1>  | B<1>  | A<1>  | FUNC<0>  | B<0>  | A<0>  | C_IN  | EXP44_.EXP
+INPUTMC | 1 | 3 | 12
+INPUTP | 7 | 67 | 65 | 88 | 72 | 3 | 86 | 49
+IMPORTS | 1 | 3 | 12
+EQ | 11 | 
+   OUT<1> = FUNC<1> & !FUNC<0> & A<1>
+	# FUNC<1> & B<1> & A<1>
+	# !FUNC<1> & !FUNC<0> & B<1> & B<0> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<1> & B<0> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<1> & C_IN & !A<0>
+;Imported pterms FB4_13
+	# FUNC<0> & B<1> & !A<1>
+	# !FUNC<1> & FUNC<0> & !B<1> & A<1>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !C_IN & A<0>;
+
+MACROCELL | 3 | 9 | OUT_2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | FUNC<1>  | FUNC<0>  | B<2>  | B<1>  | C_IN  | A<0>  | B<0>  | A<2>  | EXP42_.EXP  | EXP43_.EXP
+INPUTMC | 2 | 3 | 8 | 3 | 10
+INPUTP | 8 | 67 | 72 | 82 | 65 | 49 | 86 | 3 | 68
+IMPORTS | 2 | 3 | 8 | 3 | 10
+EQ | 13 | 
+   OUT<2> = FUNC<1> & !FUNC<0> & A<2>
+	# FUNC<1> & B<2> & A<2>
+	# !FUNC<1> & !FUNC<0> & B<2> & B<1> & B<0> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<2> & B<1> & B<0> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<2> & B<1> & C_IN & !A<0>
+;Imported pterms FB4_9
+	# FUNC<0> & B<2> & !A<2>
+	# !FUNC<1> & FUNC<0> & !B<2> & A<2>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<1>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<0> & A<0>
+;Imported pterms FB4_11
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<2> & !C_IN & A<0>;
+
+MACROCELL | 3 | 5 | OUT_3_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | FUNC<1>  | FUNC<0>  | B<3>  | B<2>  | B<1>  | C_IN  | A<0>  | B<0>  | EXP40_.EXP  | EXP41_.EXP
+INPUTMC | 2 | 3 | 4 | 3 | 6
+INPUTP | 8 | 67 | 72 | 7 | 82 | 65 | 49 | 86 | 3
+IMPORTS | 2 | 3 | 4 | 3 | 6
+EQ | 17 | 
+   !OUT<3> = !FUNC<1> & !FUNC<0> & B<3> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & B<3> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<3> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<2> & B<1> & B<0> & 
+	C_IN
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<2> & B<1> & C_IN & 
+	!A<0>
+;Imported pterms FB4_5
+	# FUNC<1> & FUNC<0> & !B<3>
+	# FUNC<1> & !FUNC<0> & !A<3>
+	# !FUNC<1> & !FUNC<0> & B<3> & !B<2>
+	# !FUNC<1> & !FUNC<0> & B<3> & !B<1>
+;Imported pterms FB4_7
+	# FUNC<0> & !B<3> & !A<3>
+	# !FUNC<1> & FUNC<0> & B<3> & A<3>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<2> & B<1> & B<0> & 
+	!A<0>;
+
+MACROCELL | 2 | 15 | OUT_4_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 12 | FUNC<1>  | FUNC<0>  | B<4>  | B<3>  | B<2>  | B<1>  | C_IN  | A<0>  | B<0>  | A<4>  | EXP36_.EXP  | EXP37_.EXP
+INPUTMC | 2 | 2 | 14 | 2 | 16
+INPUTP | 10 | 67 | 72 | 10 | 7 | 82 | 65 | 49 | 86 | 3 | 54
+IMPORTS | 2 | 2 | 14 | 2 | 16
+EQ | 18 | 
+   OUT<4> = FUNC<1> & !FUNC<0> & A<4>
+	# FUNC<1> & B<4> & A<4>
+	# !FUNC<1> & !FUNC<0> & B<4> & B<3> & B<2> & B<1> & 
+	B<0> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<4> & B<3> & B<2> & B<1> & 
+	B<0> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<4> & B<3> & B<2> & B<1> & 
+	C_IN & !A<0>
+;Imported pterms FB3_15
+	# FUNC<0> & B<4> & !A<4>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<3>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<2>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<1>
+;Imported pterms FB3_17
+	# !FUNC<1> & FUNC<0> & !B<4> & A<4>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !C_IN & A<0>;
+
+MACROCELL | 2 | 11 | OUT_5_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<5>  | A<5>  | B<1>  | B<2>  | EXP34_.EXP  | EXP35_.EXP
+INPUTMC | 2 | 2 | 10 | 2 | 12
+INPUTP | 6 | 67 | 72 | 13 | 27 | 65 | 82
+IMPORTS | 2 | 2 | 10 | 2 | 12
+EQ | 19 | 
+   OUT<5> = FUNC<1> & FUNC<0> & B<5>
+	# FUNC<1> & !FUNC<0> & A<5>
+	# FUNC<0> & B<5> & !A<5>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<2>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<1>
+;Imported pterms FB3_11
+	# !FUNC<1> & FUNC<0> & !B<5> & A<5>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<4>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<3>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !C_IN & A<0>
+;Imported pterms FB3_13
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & C_IN & !A<0>;
+
+MACROCELL | 2 | 8 | OUT_6_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<6>  | A<6>  | B<1>  | B<2>  | EXP32_.EXP  | EXP33_.EXP
+INPUTMC | 2 | 2 | 7 | 2 | 9
+INPUTP | 6 | 67 | 72 | 17 | 44 | 65 | 82
+IMPORTS | 2 | 2 | 7 | 2 | 9
+EQ | 20 | 
+   !OUT<6> = FUNC<1> & FUNC<0> & !B<6>
+	# FUNC<1> & !FUNC<0> & !A<6>
+	# FUNC<0> & !B<6> & !A<6>
+	# !FUNC<1> & !FUNC<0> & !B<2> & B<6>
+	# !FUNC<1> & !FUNC<0> & !B<1> & B<6>
+;Imported pterms FB3_8
+	# !FUNC<1> & FUNC<0> & B<6> & A<6>
+	# !FUNC<1> & !FUNC<0> & !B<5> & B<6>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<6>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<6>
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<6> & A<0>
+;Imported pterms FB3_10
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<6> & !C_IN
+	# !FUNC<1> & !FUNC<0> & B<6> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<6> & C_IN & !A<0>;
+
+MACROCELL | 2 | 4 | OUT_7_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | FUNC<1>  | FUNC<0>  | B<7>  | C_IN  | A<0>  | B<0>  | B<1>  | B<2>  | EXP29_.EXP  | EXP30_.EXP
+INPUTMC | 2 | 2 | 3 | 2 | 5
+INPUTP | 8 | 67 | 72 | 20 | 49 | 86 | 3 | 65 | 82
+IMPORTS | 2 | 2 | 3 | 2 | 5
+EQ | 22 | 
+   !OUT<7> = !FUNC<1> & !FUNC<0> & !B<2> & B<7>
+	# !FUNC<1> & !FUNC<0> & !B<1> & B<7>
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<7> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<7> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<7> & !C_IN & A<0>
+;Imported pterms FB3_4
+	# FUNC<1> & FUNC<0> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<5> & B<7>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<7>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<7>
+	# !FUNC<1> & !FUNC<0> & B<7> & !B<6>
+;Imported pterms FB3_6
+	# FUNC<1> & !FUNC<0> & !A<7>
+	# FUNC<0> & !B<7> & !A<7>
+	# !FUNC<1> & FUNC<0> & B<7> & A<7>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<7> & B<6> & C_IN & !A<0>
+;Imported pterms FB3_7
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<7> & B<6> & C_IN;
+
+MACROCELL | 2 | 1 | OUT_8_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 16 | FUNC<1>  | FUNC<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<8>  | B<7>  | B<6>  | C_IN  | A<0>  | B<0>  | A<8>  | EXP27_.EXP  | EXP28_.EXP
+INPUTMC | 2 | 2 | 0 | 2 | 2
+INPUTP | 14 | 67 | 72 | 13 | 10 | 7 | 82 | 65 | 90 | 20 | 17 | 49 | 86 | 3 | 30
+IMPORTS | 2 | 2 | 0 | 2 | 2
+EQ | 23 | 
+   OUT<8> = FUNC<1> & !FUNC<0> & A<8>
+	# FUNC<1> & B<8> & A<8>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<8> & B<7> & B<6> & C_IN & !A<0>
+;Imported pterms FB3_1
+	# FUNC<0> & B<8> & !A<8>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<8>
+;Imported pterms FB3_18
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<8> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<8> & !C_IN & A<0>
+;Imported pterms FB3_3
+	# !FUNC<1> & FUNC<0> & !B<8> & A<8>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<8> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<8> & !B<6>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<8> & A<0>;
+
+MACROCELL | 1 | 14 | OUT_9_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 16 | FUNC<1>  | FUNC<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<9>  | B<8>  | B<7>  | B<6>  | C_IN  | A<0>  | B<0>  | EXP23_.EXP  | EXP24_.EXP
+INPUTMC | 2 | 1 | 13 | 1 | 15
+INPUTP | 14 | 67 | 72 | 13 | 10 | 7 | 82 | 65 | 62 | 90 | 20 | 17 | 49 | 86 | 3
+IMPORTS | 2 | 1 | 13 | 1 | 15
+EQ | 24 | 
+   !OUT<9> = !FUNC<1> & !FUNC<0> & !B<0> & B<9> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<9> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<9> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<9> & B<8> & B<7> & B<6> & C_IN & !A<0>
+;Imported pterms FB2_14
+	# !FUNC<1> & !FUNC<0> & !B<5> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<2> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<1> & B<9>
+;Imported pterms FB2_16
+	# FUNC<1> & FUNC<0> & !B<9>
+	# FUNC<1> & !FUNC<0> & !A<9>
+	# !FUNC<1> & !FUNC<0> & B<9> & !B<8>
+	# !FUNC<1> & !FUNC<0> & B<9> & !B<7>
+	# !FUNC<1> & !FUNC<0> & B<9> & !B<6>
+;Imported pterms FB2_17
+	# FUNC<0> & !B<9> & !A<9>
+	# !FUNC<1> & FUNC<0> & B<9> & A<9>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<9> & B<8> & B<7> & B<6> & !A<0>;
+
+MACROCELL | 0 | 14 | C_OUT_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 20 | FUNC<1>  | FUNC<0>  | B<15>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<14>  | B<13>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>  | C_IN  | A<0>  | B<0>
+INPUTP | 20 | 67 | 72 | 12 | 13 | 10 | 7 | 82 | 65 | 84 | 24 | 50 | 63 | 52 | 62 | 90 | 20 | 17 | 49 | 86 | 3
+EQ | 9 | 
+   C_OUT = !FUNC<1> & !FUNC<0> & B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<14> & B<13> & B<12> & B<11> & 
+	B<10> & B<9> & B<8> & B<7> & B<6> & C_IN & !A<0>;
+
+MACROCELL | 0 | 0 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<5>  | B<14>  | B<4>  | B<3>  | B<7>  | B<6>  | EXP13_.EXP
+INPUTMC | 1 | 0 | 17
+INPUTP | 8 | 67 | 72 | 13 | 84 | 10 | 7 | 20 | 17
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 17
+EQ | 11 | 
+       EXP6_.EXP  =  !FUNC<1> & !FUNC<0> & !B<5> & !B<14>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<14>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<14>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<6>
+;Imported pterms FB1_18
+	# !FUNC<1> & FUNC<0> & !B<14> & A<14>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<13>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<14> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<14> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !C_IN & A<0>
+
+MACROCELL | 0 | 2 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<14>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | EXP8_.EXP
+INPUTMC | 1 | 0 | 3
+INPUTP | 8 | 67 | 72 | 84 | 50 | 63 | 52 | 62 | 90
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 3
+EQ | 15 | 
+       EXP7_.EXP  =  !FUNC<1> & !FUNC<0> & !B<14> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<8>
+;Imported pterms FB1_4
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<14> & B<13> & B<12> & B<11> & B<10> & 
+	B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<14> & B<13> & B<12> & B<11> & B<10> & 
+	B<9> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<14> & B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & C_IN & !A<0>
+
+MACROCELL | 0 | 3 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 19 | FUNC<1>  | FUNC<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<0>  | B<14>  | B<13>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>  | C_IN  | A<0>
+INPUTP | 19 | 67 | 72 | 13 | 10 | 7 | 82 | 65 | 3 | 84 | 24 | 50 | 63 | 52 | 62 | 90 | 20 | 17 | 49 | 86
+EXPORTS | 1 | 0 | 2
+EQ | 9 | 
+       EXP8_.EXP  =  !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<14> & B<13> & B<12> & B<11> & B<10> & 
+	B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<14> & B<13> & B<12> & B<11> & B<10> & 
+	B<9> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<14> & B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & C_IN & !A<0>
+
+MACROCELL | 0 | 5 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 6
+INPUTS | 19 | FUNC<1>  | FUNC<0>  | B<13>  | A<13>  | B<0>  | C_IN  | A<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>
+INPUTP | 19 | 67 | 72 | 24 | 92 | 3 | 49 | 86 | 13 | 10 | 7 | 82 | 65 | 50 | 63 | 52 | 62 | 90 | 20 | 17
+EXPORTS | 1 | 0 | 6
+EQ | 7 | 
+       EXP9_.EXP  =  !FUNC<1> & FUNC<0> & B<13> & A<13>
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<13> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<13> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<13> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & !A<0>
+
+MACROCELL | 0 | 6 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<5>  | B<13>  | B<4>  | B<3>  | B<7>  | B<6>  | EXP9_.EXP
+INPUTMC | 1 | 0 | 5
+INPUTP | 8 | 67 | 72 | 13 | 24 | 10 | 7 | 20 | 17
+EXPORTS | 1 | 0 | 7
+IMPORTS | 1 | 0 | 5
+EQ | 13 | 
+       EXP10_.EXP  =  !FUNC<1> & !FUNC<0> & !B<5> & B<13>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<13>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<13>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<7>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<6>
+;Imported pterms FB1_6
+	# !FUNC<1> & FUNC<0> & B<13> & A<13>
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<13> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<13> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<13> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & !A<0>
+
+MACROCELL | 0 | 8 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<13>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | OUT_0_OBUF.EXP
+INPUTMC | 1 | 0 | 9
+INPUTP | 8 | 67 | 72 | 24 | 50 | 63 | 52 | 62 | 90
+EXPORTS | 1 | 0 | 7
+IMPORTS | 1 | 0 | 9
+EQ | 12 | 
+       EXP11_.EXP  =  !FUNC<1> & !FUNC<0> & B<13> & !B<12>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<11>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<10>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<9>
+	# !FUNC<1> & !FUNC<0> & B<13> & !B<8>
+;Imported pterms FB1_10
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<13> & B<12> & B<11> & B<10> & B<9> & 
+	B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<13> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & C_IN & !A<0>
+
+MACROCELL | 0 | 10 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 9
+INPUTS | 5 | FUNC<1>  | FUNC<0>  | B<0>  | A<0>  | C_IN
+INPUTP | 5 | 67 | 72 | 3 | 86 | 49
+EXPORTS | 1 | 0 | 9
+EQ | 5 | 
+       EXP12_.EXP  =  !FUNC<1> & FUNC<0> & !B<0> & A<0>
+	# !FUNC<1> & B<0> & !C_IN & !A<0>
+	# !FUNC<0> & B<0> & C_IN & A<0>
+	# !FUNC<0> & !B<0> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<0> & C_IN & !A<0>
+
+MACROCELL | 0 | 17 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<14>  | A<14>  | B<13>  | B<0>  | C_IN  | A<0>
+INPUTP | 8 | 67 | 72 | 84 | 1 | 24 | 3 | 49 | 86
+EXPORTS | 1 | 0 | 0
+EQ | 5 | 
+       EXP13_.EXP  =  !FUNC<1> & FUNC<0> & !B<14> & A<14>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !B<13>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<14> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<14> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<14> & !C_IN & A<0>
+
+MACROCELL | 1 | 0 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<5>  | B<12>  | B<4>  | B<3>  | B<7>  | B<6>  | EXP26_.EXP
+INPUTMC | 1 | 1 | 17
+INPUTP | 8 | 67 | 72 | 13 | 50 | 10 | 7 | 20 | 17
+EXPORTS | 1 | 1 | 1
+IMPORTS | 1 | 1 | 17
+EQ | 12 | 
+       EXP14_.EXP  =  !FUNC<1> & !FUNC<0> & !B<5> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<12>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<6>
+;Imported pterms FB2_18
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<12> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<12> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & !A<0>
+
+MACROCELL | 1 | 2 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<12>  | A<12>  | B<11>  | B<10>  | B<9>  | B<8>  | EXP16_.EXP
+INPUTMC | 1 | 1 | 3
+INPUTP | 8 | 67 | 72 | 50 | 21 | 63 | 52 | 62 | 90
+EXPORTS | 1 | 1 | 1
+IMPORTS | 1 | 1 | 3
+EQ | 12 | 
+       EXP15_.EXP  =  !FUNC<1> & FUNC<0> & !B<12> & A<12>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !B<8>
+;Imported pterms FB2_4
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<12> & B<11> & B<10> & B<9> & B<8> & B<7> & 
+	B<6> & C_IN & !A<0>
+
+MACROCELL | 1 | 3 | EXP16_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 17 | FUNC<1>  | FUNC<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<0>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>  | C_IN  | A<0>
+INPUTP | 17 | 67 | 72 | 13 | 10 | 7 | 82 | 65 | 3 | 50 | 63 | 52 | 62 | 90 | 20 | 17 | 49 | 86
+EXPORTS | 1 | 1 | 2
+EQ | 6 | 
+       EXP16_.EXP  =  !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<12> & B<11> & B<10> & B<9> & B<8> & B<7> & 
+	B<6> & C_IN & !A<0>
+
+MACROCELL | 1 | 4 | EXP17_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 5
+INPUTS | 8 | FUNC<0>  | B<11>  | A<11>  | FUNC<1>  | B<4>  | B<3>  | B<2>  | B<1>
+INPUTP | 8 | 72 | 63 | 47 | 67 | 10 | 7 | 82 | 65
+EXPORTS | 1 | 1 | 5
+EQ | 5 | 
+       EXP17_.EXP  =  FUNC<0> & B<11> & !A<11>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<11>
+
+MACROCELL | 1 | 6 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 5
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<5>  | B<11>  | B<9>  | B<8>  | B<7>  | B<6>  | EXP19_.EXP
+INPUTMC | 1 | 1 | 7
+INPUTP | 8 | 67 | 72 | 13 | 63 | 62 | 90 | 20 | 17
+EXPORTS | 1 | 1 | 5
+IMPORTS | 1 | 1 | 7
+EQ | 11 | 
+       EXP18_.EXP  =  !FUNC<1> & !FUNC<0> & !B<5> & !B<11>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<6>
+;Imported pterms FB2_8
+	# !FUNC<1> & FUNC<0> & !B<11> & A<11>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<11> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<11> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !C_IN & A<0>
+
+MACROCELL | 1 | 7 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<11>  | A<11>  | B<10>  | B<0>  | C_IN  | A<0>
+INPUTP | 8 | 67 | 72 | 63 | 47 | 52 | 3 | 49 | 86
+EXPORTS | 1 | 1 | 6
+EQ | 5 | 
+       EXP19_.EXP  =  !FUNC<1> & FUNC<0> & !B<11> & A<11>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<11> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<11> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<11> & !C_IN & A<0>
+
+MACROCELL | 1 | 9 | EXP20_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 10
+INPUTS | 7 | FUNC<1>  | FUNC<0>  | B<10>  | A<10>  | B<0>  | C_IN  | A<0>
+INPUTP | 7 | 67 | 72 | 52 | 66 | 3 | 49 | 86
+EXPORTS | 1 | 1 | 10
+EQ | 4 | 
+       EXP20_.EXP  =  !FUNC<1> & FUNC<0> & !B<10> & A<10>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<10> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<10> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !C_IN & A<0>
+
+MACROCELL | 1 | 10 | EXP21_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 9 | FUNC<0>  | B<10>  | A<10>  | FUNC<1>  | B<4>  | B<3>  | B<2>  | B<1>  | EXP20_.EXP
+INPUTMC | 1 | 1 | 9
+INPUTP | 8 | 72 | 52 | 66 | 67 | 10 | 7 | 82 | 65
+EXPORTS | 1 | 1 | 11
+IMPORTS | 1 | 1 | 9
+EQ | 10 | 
+       EXP21_.EXP  =  FUNC<0> & B<10> & !A<10>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<10>
+;Imported pterms FB2_10
+	# !FUNC<1> & FUNC<0> & !B<10> & A<10>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<10> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<10> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !C_IN & A<0>
+
+MACROCELL | 1 | 12 | EXP22_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<5>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>
+INPUTP | 8 | 67 | 72 | 13 | 52 | 62 | 90 | 20 | 17
+EXPORTS | 1 | 1 | 11
+EQ | 5 | 
+       EXP22_.EXP  =  !FUNC<1> & !FUNC<0> & !B<5> & !B<10>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<9>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<10> & !B<6>
+
+MACROCELL | 1 | 13 | EXP23_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<5>  | B<9>  | B<4>  | B<3>  | B<2>  | B<1>
+INPUTP | 8 | 67 | 72 | 13 | 62 | 10 | 7 | 82 | 65
+EXPORTS | 1 | 1 | 14
+EQ | 5 | 
+       EXP23_.EXP  =  !FUNC<1> & !FUNC<0> & !B<5> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<2> & B<9>
+	# !FUNC<1> & !FUNC<0> & !B<1> & B<9>
+
+MACROCELL | 1 | 15 | EXP24_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 8 | FUNC<1>  | FUNC<0>  | B<9>  | A<9>  | B<8>  | B<7>  | B<6>  | EXP25_.EXP
+INPUTMC | 1 | 1 | 16
+INPUTP | 7 | 67 | 72 | 62 | 33 | 90 | 20 | 17
+EXPORTS | 1 | 1 | 14
+IMPORTS | 1 | 1 | 16
+EQ | 10 | 
+       EXP24_.EXP  =  FUNC<1> & FUNC<0> & !B<9>
+	# FUNC<1> & !FUNC<0> & !A<9>
+	# !FUNC<1> & !FUNC<0> & B<9> & !B<8>
+	# !FUNC<1> & !FUNC<0> & B<9> & !B<7>
+	# !FUNC<1> & !FUNC<0> & B<9> & !B<6>
+;Imported pterms FB2_17
+	# FUNC<0> & !B<9> & !A<9>
+	# !FUNC<1> & FUNC<0> & B<9> & A<9>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<9> & B<8> & B<7> & B<6> & !A<0>
+
+MACROCELL | 1 | 16 | EXP25_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 15
+INPUTS | 14 | FUNC<0>  | B<9>  | A<9>  | FUNC<1>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<0>  | B<8>  | B<7>  | B<6>  | A<0>
+INPUTP | 14 | 72 | 62 | 33 | 67 | 13 | 10 | 7 | 82 | 65 | 3 | 90 | 20 | 17 | 86
+EXPORTS | 1 | 1 | 15
+EQ | 4 | 
+       EXP25_.EXP  =  FUNC<0> & !B<9> & !A<9>
+	# !FUNC<1> & FUNC<0> & B<9> & A<9>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<9> & B<8> & B<7> & B<6> & !A<0>
+
+MACROCELL | 1 | 17 | EXP26_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 0
+INPUTS | 17 | FUNC<1>  | FUNC<0>  | B<0>  | B<12>  | C_IN  | A<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>
+INPUTP | 17 | 67 | 72 | 3 | 50 | 49 | 86 | 13 | 10 | 7 | 82 | 65 | 63 | 52 | 62 | 90 | 20 | 17
+EXPORTS | 1 | 1 | 0
+EQ | 6 | 
+       EXP26_.EXP  =  !FUNC<1> & !FUNC<0> & !B<0> & !B<12> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<12> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<12> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & B<12> & B<11> & B<10> & B<9> & B<8> & 
+	B<7> & B<6> & !A<0>
+
+MACROCELL | 2 | 0 | EXP27_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 9 | FUNC<0>  | B<8>  | A<8>  | FUNC<1>  | B<4>  | B<3>  | B<2>  | B<1>  | EXP38_.EXP
+INPUTMC | 1 | 2 | 17
+INPUTP | 8 | 72 | 90 | 30 | 67 | 10 | 7 | 82 | 65
+EXPORTS | 1 | 2 | 1
+IMPORTS | 1 | 2 | 17
+EQ | 8 | 
+       EXP27_.EXP  =  FUNC<0> & B<8> & !A<8>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<3> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<8>
+;Imported pterms FB3_18
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<8> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<8> & !C_IN & A<0>
+
+MACROCELL | 2 | 2 | EXP28_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<8>  | A<8>  | B<5>  | B<7>  | B<6>  | B<0>  | A<0>
+INPUTP | 9 | 67 | 72 | 90 | 30 | 13 | 20 | 17 | 3 | 86
+EXPORTS | 1 | 2 | 1
+EQ | 5 | 
+       EXP28_.EXP  =  !FUNC<1> & FUNC<0> & !B<8> & A<8>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<8>
+	# !FUNC<1> & !FUNC<0> & !B<8> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<8> & !B<6>
+	# !FUNC<1> & !FUNC<0> & !B<0> & !B<8> & A<0>
+
+MACROCELL | 2 | 3 | EXP29_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 7 | FUNC<1>  | FUNC<0>  | B<7>  | B<5>  | B<4>  | B<3>  | B<6>
+INPUTP | 7 | 67 | 72 | 20 | 13 | 10 | 7 | 17
+EXPORTS | 1 | 2 | 4
+EQ | 5 | 
+       EXP29_.EXP  =  FUNC<1> & FUNC<0> & !B<7>
+	# !FUNC<1> & !FUNC<0> & !B<5> & B<7>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<7>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<7>
+	# !FUNC<1> & !FUNC<0> & B<7> & !B<6>
+
+MACROCELL | 2 | 5 | EXP30_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 14 | FUNC<1>  | FUNC<0>  | A<7>  | B<7>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<0>  | B<6>  | A<0>  | C_IN  | EXP31_.EXP
+INPUTMC | 1 | 2 | 6
+INPUTP | 13 | 67 | 72 | 43 | 20 | 13 | 10 | 7 | 82 | 65 | 3 | 17 | 86 | 49
+EXPORTS | 1 | 2 | 4
+IMPORTS | 1 | 2 | 6
+EQ | 10 | 
+       EXP30_.EXP  =  FUNC<1> & !FUNC<0> & !A<7>
+	# FUNC<0> & !B<7> & !A<7>
+	# !FUNC<1> & FUNC<0> & B<7> & A<7>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<7> & B<6> & C_IN & !A<0>
+;Imported pterms FB3_7
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<7> & B<6> & C_IN
+
+MACROCELL | 2 | 6 | EXP31_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 5
+INPUTS | 11 | FUNC<1>  | FUNC<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<0>  | B<7>  | B<6>  | C_IN
+INPUTP | 11 | 67 | 72 | 13 | 10 | 7 | 82 | 65 | 3 | 20 | 17 | 49
+EXPORTS | 1 | 2 | 5
+EQ | 2 | 
+       EXP31_.EXP  =  !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<7> & B<6> & C_IN
+
+MACROCELL | 2 | 7 | EXP32_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 8
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<6>  | A<6>  | B<5>  | B<4>  | B<3>  | B<0>  | A<0>
+INPUTP | 9 | 67 | 72 | 17 | 44 | 13 | 10 | 7 | 3 | 86
+EXPORTS | 1 | 2 | 8
+EQ | 5 | 
+       EXP32_.EXP  =  !FUNC<1> & FUNC<0> & B<6> & A<6>
+	# !FUNC<1> & !FUNC<0> & !B<5> & B<6>
+	# !FUNC<1> & !FUNC<0> & !B<4> & B<6>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<6>
+	# !FUNC<1> & !FUNC<0> & !B<0> & B<6> & A<0>
+
+MACROCELL | 2 | 9 | EXP33_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 8
+INPUTS | 11 | FUNC<1>  | FUNC<0>  | B<0>  | B<6>  | C_IN  | A<0>  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>
+INPUTP | 11 | 67 | 72 | 3 | 17 | 49 | 86 | 13 | 10 | 7 | 82 | 65
+EXPORTS | 1 | 2 | 8
+EQ | 8 | 
+       EXP33_.EXP  =  !FUNC<1> & !FUNC<0> & !B<0> & B<6> & !C_IN
+	# !FUNC<1> & !FUNC<0> & B<6> & !C_IN & A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & !B<6> & C_IN & !A<0>
+
+MACROCELL | 2 | 10 | EXP34_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 11
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<5>  | A<5>  | B<4>  | B<3>  | B<0>  | A<0>  | C_IN
+INPUTP | 9 | 67 | 72 | 13 | 27 | 10 | 7 | 3 | 86 | 49
+EXPORTS | 1 | 2 | 11
+EQ | 5 | 
+       EXP34_.EXP  =  !FUNC<1> & FUNC<0> & !B<5> & A<5>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<4>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<3>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<5> & !C_IN & A<0>
+
+MACROCELL | 2 | 12 | EXP35_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 11
+INPUTS | 10 | FUNC<1>  | FUNC<0>  | B<5>  | B<0>  | C_IN  | B<4>  | B<3>  | B<2>  | B<1>  | A<0>
+INPUTP | 10 | 67 | 72 | 13 | 3 | 49 | 10 | 7 | 82 | 65 | 86
+EXPORTS | 1 | 2 | 11
+EQ | 7 | 
+       EXP35_.EXP  =  !FUNC<1> & !FUNC<0> & !B<5> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & C_IN
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & B<0> & !A<0>
+	# !FUNC<1> & !FUNC<0> & B<5> & B<4> & B<3> & B<2> & 
+	B<1> & C_IN & !A<0>
+
+MACROCELL | 2 | 14 | EXP36_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 7 | FUNC<0>  | B<4>  | A<4>  | FUNC<1>  | B<3>  | B<2>  | B<1>
+INPUTP | 7 | 72 | 10 | 54 | 67 | 7 | 82 | 65
+EXPORTS | 1 | 2 | 15
+EQ | 4 | 
+       EXP36_.EXP  =  FUNC<0> & B<4> & !A<4>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<3>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<2>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<1>
+
+MACROCELL | 2 | 16 | EXP37_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 7 | FUNC<1>  | FUNC<0>  | B<4>  | A<4>  | B<0>  | C_IN  | A<0>
+INPUTP | 7 | 67 | 72 | 10 | 54 | 3 | 49 | 86
+EXPORTS | 1 | 2 | 15
+EQ | 4 | 
+       EXP37_.EXP  =  !FUNC<1> & FUNC<0> & !B<4> & A<4>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<4> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<4> & !C_IN & A<0>
+
+MACROCELL | 2 | 17 | EXP38_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 0
+INPUTS | 6 | FUNC<1>  | FUNC<0>  | B<0>  | B<8>  | C_IN  | A<0>
+INPUTP | 6 | 67 | 72 | 3 | 90 | 49 | 86
+EXPORTS | 1 | 2 | 0
+EQ | 2 | 
+       EXP38_.EXP  =  !FUNC<1> & !FUNC<0> & !B<0> & !B<8> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<8> & !C_IN & A<0>
+
+MACROCELL | 3 | 0 | EXP39_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 17
+INPUTS | 20 | FUNC<1>  | FUNC<0>  | B<15>  | B<0>  | C_IN  | B<5>  | B<4>  | B<3>  | B<2>  | B<1>  | B<14>  | B<13>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | B<7>  | B<6>  | A<0>
+INPUTP | 20 | 67 | 72 | 12 | 3 | 49 | 13 | 10 | 7 | 82 | 65 | 84 | 24 | 50 | 63 | 52 | 62 | 90 | 20 | 17 | 86
+EXPORTS | 1 | 3 | 17
+EQ | 10 | 
+       EXP39_.EXP  =  !FUNC<1> & !FUNC<0> & B<15> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<14> & B<13> & B<12> & B<11> & 
+	B<10> & B<9> & B<8> & B<7> & B<6> & C_IN & !A<0>
+
+MACROCELL | 3 | 4 | EXP40_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 5
+INPUTS | 6 | FUNC<1>  | FUNC<0>  | B<3>  | A<3>  | B<2>  | B<1>
+INPUTP | 6 | 67 | 72 | 7 | 16 | 82 | 65
+EXPORTS | 1 | 3 | 5
+EQ | 4 | 
+       EXP40_.EXP  =  FUNC<1> & FUNC<0> & !B<3>
+	# FUNC<1> & !FUNC<0> & !A<3>
+	# !FUNC<1> & !FUNC<0> & B<3> & !B<2>
+	# !FUNC<1> & !FUNC<0> & B<3> & !B<1>
+
+MACROCELL | 3 | 6 | EXP41_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 5
+INPUTS | 8 | FUNC<0>  | B<3>  | A<3>  | FUNC<1>  | B<2>  | B<1>  | B<0>  | A<0>
+INPUTP | 8 | 72 | 7 | 16 | 67 | 82 | 65 | 3 | 86
+EXPORTS | 1 | 3 | 5
+EQ | 4 | 
+       EXP41_.EXP  =  FUNC<0> & !B<3> & !A<3>
+	# !FUNC<1> & FUNC<0> & B<3> & A<3>
+	# !FUNC<1> & !FUNC<0> & !B<3> & B<2> & B<1> & B<0> & 
+	!A<0>
+
+MACROCELL | 3 | 8 | EXP42_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 9
+INPUTS | 7 | FUNC<0>  | B<2>  | A<2>  | FUNC<1>  | B<1>  | B<0>  | A<0>
+INPUTP | 7 | 72 | 82 | 68 | 67 | 65 | 3 | 86
+EXPORTS | 1 | 3 | 9
+EQ | 4 | 
+       EXP42_.EXP  =  FUNC<0> & B<2> & !A<2>
+	# !FUNC<1> & FUNC<0> & !B<2> & A<2>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<1>
+	# !FUNC<1> & !FUNC<0> & !B<2> & !B<0> & A<0>
+
+MACROCELL | 3 | 10 | EXP43_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 9
+INPUTS | 6 | FUNC<1>  | FUNC<0>  | B<2>  | B<0>  | C_IN  | A<0>
+INPUTP | 6 | 67 | 72 | 82 | 3 | 49 | 86
+EXPORTS | 1 | 3 | 9
+EQ | 2 | 
+       EXP43_.EXP  =  !FUNC<1> & !FUNC<0> & !B<2> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<2> & !C_IN & A<0>
+
+MACROCELL | 3 | 12 | EXP44_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 11
+INPUTS | 7 | FUNC<0>  | B<1>  | A<1>  | FUNC<1>  | B<0>  | C_IN  | A<0>
+INPUTP | 7 | 72 | 65 | 88 | 67 | 3 | 49 | 86
+EXPORTS | 1 | 3 | 11
+EQ | 5 | 
+       EXP44_.EXP  =  FUNC<0> & B<1> & !A<1>
+	# !FUNC<1> & FUNC<0> & !B<1> & A<1>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<1> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & !B<1> & !C_IN & A<0>
+
+MACROCELL | 3 | 14 | EXP45_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 15
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<15>  | A<15>  | B<14>  | B<13>  | B<0>  | A<0>  | C_IN
+INPUTP | 9 | 67 | 72 | 12 | 46 | 84 | 24 | 3 | 86 | 49
+EXPORTS | 1 | 3 | 15
+EQ | 5 | 
+       EXP45_.EXP  =  !FUNC<1> & FUNC<0> & B<15> & A<15>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<14>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<13>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<15> & !C_IN & A<0>
+
+MACROCELL | 3 | 15 | EXP46_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<15>  | B<5>  | B<4>  | B<3>  | B<7>  | B<6>  | EXP45_.EXP
+INPUTMC | 1 | 3 | 14
+INPUTP | 8 | 67 | 72 | 12 | 13 | 10 | 7 | 20 | 17
+EXPORTS | 1 | 3 | 16
+IMPORTS | 1 | 3 | 14
+EQ | 11 | 
+       EXP46_.EXP  =  !FUNC<1> & !FUNC<0> & B<15> & !B<5>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<4>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<3>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<7>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<6>
+;Imported pterms FB4_15
+	# !FUNC<1> & FUNC<0> & B<15> & A<15>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<14>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<13>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<0> & A<0>
+	# !FUNC<1> & !FUNC<0> & B<15> & !C_IN & A<0>
+
+MACROCELL | 3 | 17 | EXP47_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 9 | FUNC<1>  | FUNC<0>  | B<15>  | B<12>  | B<11>  | B<10>  | B<9>  | B<8>  | EXP39_.EXP
+INPUTMC | 1 | 3 | 0
+INPUTP | 8 | 67 | 72 | 12 | 50 | 63 | 52 | 62 | 90
+EXPORTS | 1 | 3 | 16
+IMPORTS | 1 | 3 | 0
+EQ | 16 | 
+       EXP47_.EXP  =  !FUNC<1> & !FUNC<0> & B<15> & !B<12>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<11>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<10>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<9>
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<8>
+;Imported pterms FB4_1
+	# !FUNC<1> & !FUNC<0> & B<15> & !B<0> & !C_IN
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & C_IN
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<0> & B<14> & B<13> & B<12> & 
+	B<11> & B<10> & B<9> & B<8> & B<7> & B<6> & !A<0>
+	# !FUNC<1> & !FUNC<0> & !B<15> & B<5> & B<4> & 
+	B<3> & B<2> & B<1> & B<14> & B<13> & B<12> & B<11> & 
+	B<10> & B<9> & B<8> & B<7> & B<6> & C_IN & !A<0>
+
+PIN | FUNC<1> | 64 | 0 | N/A | 67 | 59 | 0 | 9 | 1 | 11 | 1 | 5 | 1 | 1 | 0 | 7 | 0 | 1 | 3 | 16 | 3 | 11 | 3 | 9 | 3 | 5 | 2 | 15 | 2 | 11 | 2 | 8 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 8 | 0 | 10 | 0 | 17 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 9 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 1 | 16 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 9 | 2 | 10 | 2 | 12 | 2 | 14 | 2 | 16 | 2 | 17 | 3 | 0 | 3 | 4 | 3 | 6 | 3 | 8 | 3 | 10 | 3 | 12 | 3 | 14 | 3 | 15 | 3 | 17
+PIN | FUNC<0> | 64 | 0 | N/A | 72 | 59 | 0 | 9 | 1 | 11 | 1 | 5 | 1 | 1 | 0 | 7 | 0 | 1 | 3 | 16 | 3 | 11 | 3 | 9 | 3 | 5 | 2 | 15 | 2 | 11 | 2 | 8 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 8 | 0 | 10 | 0 | 17 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 9 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 1 | 16 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 9 | 2 | 10 | 2 | 12 | 2 | 14 | 2 | 16 | 2 | 17 | 3 | 0 | 3 | 4 | 3 | 6 | 3 | 8 | 3 | 10 | 3 | 12 | 3 | 14 | 3 | 15 | 3 | 17
+PIN | B<15> | 64 | 0 | N/A | 12 | 6 | 3 | 16 | 0 | 14 | 3 | 0 | 3 | 14 | 3 | 15 | 3 | 17
+PIN | B<5> | 64 | 0 | N/A | 13 | 28 | 1 | 11 | 1 | 5 | 1 | 0 | 0 | 6 | 0 | 0 | 3 | 15 | 2 | 11 | 2 | 7 | 2 | 3 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 9 | 1 | 3 | 1 | 6 | 1 | 12 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 6 | 2 | 9 | 2 | 10 | 2 | 12 | 3 | 0
+PIN | B<4> | 64 | 0 | N/A | 10 | 30 | 1 | 11 | 1 | 5 | 1 | 0 | 0 | 6 | 0 | 0 | 3 | 15 | 2 | 15 | 2 | 10 | 2 | 7 | 2 | 3 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 9 | 1 | 3 | 1 | 4 | 1 | 10 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 0 | 2 | 5 | 2 | 6 | 2 | 9 | 2 | 12 | 2 | 14 | 2 | 16 | 3 | 0
+PIN | B<3> | 64 | 0 | N/A | 7 | 32 | 1 | 11 | 1 | 5 | 1 | 0 | 0 | 6 | 0 | 0 | 3 | 15 | 3 | 5 | 2 | 15 | 2 | 10 | 2 | 7 | 2 | 3 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 9 | 1 | 3 | 1 | 4 | 1 | 10 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 0 | 2 | 5 | 2 | 6 | 2 | 9 | 2 | 12 | 2 | 14 | 3 | 0 | 3 | 4 | 3 | 6
+PIN | B<2> | 64 | 0 | N/A | 82 | 35 | 1 | 11 | 1 | 5 | 1 | 1 | 0 | 7 | 0 | 1 | 3 | 16 | 3 | 9 | 3 | 5 | 2 | 15 | 2 | 11 | 2 | 8 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 9 | 1 | 3 | 1 | 4 | 1 | 10 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 0 | 2 | 5 | 2 | 6 | 2 | 9 | 2 | 12 | 2 | 14 | 3 | 0 | 3 | 4 | 3 | 6 | 3 | 8 | 3 | 10
+PIN | B<1> | 64 | 0 | N/A | 65 | 36 | 1 | 11 | 1 | 5 | 1 | 1 | 0 | 7 | 0 | 1 | 3 | 16 | 3 | 11 | 3 | 9 | 3 | 5 | 2 | 15 | 2 | 11 | 2 | 8 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 9 | 1 | 3 | 1 | 4 | 1 | 10 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 0 | 2 | 5 | 2 | 6 | 2 | 9 | 2 | 12 | 2 | 14 | 3 | 0 | 3 | 4 | 3 | 6 | 3 | 8 | 3 | 12
+PIN | B<0> | 64 | 0 | N/A | 3 | 35 | 0 | 9 | 1 | 11 | 1 | 5 | 0 | 17 | 0 | 5 | 0 | 14 | 3 | 14 | 3 | 11 | 3 | 9 | 3 | 5 | 2 | 15 | 2 | 10 | 2 | 7 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 3 | 0 | 10 | 1 | 3 | 1 | 7 | 1 | 9 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 6 | 2 | 9 | 2 | 12 | 2 | 16 | 2 | 17 | 3 | 0 | 3 | 6 | 3 | 8 | 3 | 10 | 3 | 12
+PIN | B<14> | 64 | 0 | N/A | 84 | 8 | 0 | 1 | 3 | 14 | 0 | 14 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 17 | 3 | 0
+PIN | B<13> | 64 | 0 | N/A | 24 | 10 | 0 | 7 | 0 | 14 | 3 | 14 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 17 | 3 | 0
+PIN | B<12> | 64 | 0 | N/A | 50 | 13 | 1 | 1 | 0 | 5 | 0 | 14 | 3 | 0 | 0 | 2 | 0 | 3 | 0 | 8 | 0 | 9 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 17 | 3 | 17
+PIN | B<11> | 64 | 0 | N/A | 63 | 15 | 1 | 5 | 0 | 9 | 0 | 5 | 0 | 14 | 3 | 0 | 0 | 2 | 0 | 3 | 0 | 8 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 17 | 3 | 17
+PIN | B<10> | 64 | 0 | N/A | 52 | 17 | 1 | 11 | 1 | 5 | 0 | 9 | 0 | 5 | 0 | 14 | 3 | 0 | 0 | 2 | 0 | 3 | 0 | 8 | 1 | 2 | 1 | 3 | 1 | 7 | 1 | 9 | 1 | 10 | 1 | 12 | 1 | 17 | 3 | 17
+PIN | B<9> | 64 | 0 | N/A | 62 | 19 | 1 | 11 | 1 | 5 | 0 | 9 | 0 | 5 | 0 | 14 | 3 | 0 | 1 | 14 | 0 | 2 | 0 | 3 | 0 | 8 | 1 | 2 | 1 | 3 | 1 | 6 | 1 | 12 | 1 | 13 | 1 | 15 | 1 | 16 | 1 | 17 | 3 | 17
+PIN | B<8> | 64 | 0 | N/A | 90 | 22 | 1 | 11 | 1 | 5 | 0 | 9 | 0 | 5 | 0 | 14 | 3 | 0 | 2 | 1 | 1 | 14 | 0 | 2 | 0 | 3 | 0 | 8 | 1 | 2 | 1 | 3 | 1 | 6 | 1 | 12 | 1 | 15 | 1 | 16 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 17 | 3 | 17
+PIN | B<7> | 64 | 0 | N/A | 20 | 24 | 1 | 11 | 1 | 5 | 1 | 0 | 0 | 6 | 0 | 0 | 3 | 15 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 9 | 1 | 3 | 1 | 6 | 1 | 12 | 1 | 15 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 6 | 3 | 0
+PIN | B<6> | 64 | 0 | N/A | 17 | 26 | 1 | 11 | 1 | 5 | 1 | 0 | 0 | 6 | 0 | 0 | 3 | 15 | 2 | 8 | 2 | 3 | 2 | 1 | 1 | 14 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 9 | 1 | 3 | 1 | 6 | 1 | 12 | 1 | 15 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 9 | 3 | 0
+PIN | A<0> | 64 | 0 | N/A | 86 | 34 | 0 | 9 | 1 | 11 | 1 | 5 | 0 | 17 | 0 | 5 | 0 | 14 | 3 | 14 | 3 | 11 | 3 | 9 | 3 | 5 | 2 | 15 | 2 | 10 | 2 | 7 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 3 | 0 | 10 | 1 | 3 | 1 | 7 | 1 | 9 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 9 | 2 | 12 | 2 | 16 | 2 | 17 | 3 | 0 | 3 | 6 | 3 | 8 | 3 | 10 | 3 | 12
+PIN | C_IN | 64 | 0 | N/A | 49 | 30 | 0 | 3 | 1 | 11 | 1 | 5 | 0 | 17 | 0 | 5 | 0 | 14 | 3 | 14 | 3 | 11 | 3 | 9 | 3 | 5 | 2 | 15 | 2 | 10 | 2 | 6 | 2 | 4 | 2 | 1 | 1 | 14 | 0 | 9 | 0 | 10 | 1 | 3 | 1 | 7 | 1 | 9 | 1 | 17 | 2 | 5 | 2 | 9 | 2 | 12 | 2 | 16 | 2 | 17 | 3 | 0 | 3 | 10 | 3 | 12
+PIN | A<10> | 64 | 0 | N/A | 66 | 3 | 1 | 11 | 1 | 9 | 1 | 10
+PIN | A<11> | 64 | 0 | N/A | 47 | 3 | 1 | 5 | 1 | 4 | 1 | 7
+PIN | A<12> | 64 | 0 | N/A | 21 | 2 | 1 | 1 | 1 | 2
+PIN | A<13> | 64 | 0 | N/A | 92 | 2 | 0 | 7 | 0 | 5
+PIN | A<14> | 64 | 0 | N/A | 1 | 2 | 0 | 1 | 0 | 17
+PIN | A<15> | 64 | 0 | N/A | 46 | 2 | 3 | 16 | 3 | 14
+PIN | A<1> | 64 | 0 | N/A | 88 | 2 | 3 | 11 | 3 | 12
+PIN | A<2> | 64 | 0 | N/A | 68 | 2 | 3 | 9 | 3 | 8
+PIN | A<3> | 64 | 0 | N/A | 16 | 2 | 3 | 4 | 3 | 6
+PIN | A<4> | 64 | 0 | N/A | 54 | 3 | 2 | 15 | 2 | 14 | 2 | 16
+PIN | A<5> | 64 | 0 | N/A | 27 | 2 | 2 | 11 | 2 | 10
+PIN | A<6> | 64 | 0 | N/A | 44 | 2 | 2 | 8 | 2 | 7
+PIN | A<7> | 64 | 0 | N/A | 43 | 1 | 2 | 5
+PIN | A<8> | 64 | 0 | N/A | 30 | 3 | 2 | 1 | 2 | 0 | 2 | 2
+PIN | A<9> | 64 | 0 | N/A | 33 | 2 | 1 | 15 | 1 | 16
+PIN | OUT<0> | 536871040 | 0 | N/A | 25
+PIN | OUT<10> | 536871040 | 0 | N/A | 5
+PIN | OUT<11> | 536871040 | 0 | N/A | 89
+PIN | OUT<12> | 536871040 | 0 | N/A | 87
+PIN | OUT<13> | 536871040 | 0 | N/A | 15
+PIN | OUT<14> | 536871040 | 0 | N/A | 11
+PIN | OUT<15> | 536871040 | 0 | N/A | 83
+PIN | OUT<1> | 536871040 | 0 | N/A | 75
+PIN | OUT<2> | 536871040 | 0 | N/A | 74
+PIN | OUT<3> | 536871040 | 0 | N/A | 70
+PIN | OUT<4> | 536871040 | 0 | N/A | 59
+PIN | OUT<5> | 536871040 | 0 | N/A | 55
+PIN | OUT<6> | 536871040 | 0 | N/A | 38
+PIN | OUT<7> | 536871040 | 0 | N/A | 31
+PIN | OUT<8> | 536871040 | 0 | N/A | 29
+PIN | OUT<9> | 536871040 | 0 | N/A | 9
+PIN | C_OUT | 536871040 | 0 | N/A | 26

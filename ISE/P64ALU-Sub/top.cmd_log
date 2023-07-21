@@ -1,0 +1,144 @@
+xst -intstyle ise -ifn "/home/ise/Projects/P64ALU-Gen1/top.xst" -ofn "/home/ise/Projects/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+taengine -intstyle ise -f top -w --format html1 -l top_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/Projects/P64ALU-Gen1/top.xst" -ofn "/home/ise/Projects/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/Projects/P64ALU-Gen1/top.xst" -ofn "/home/ise/Projects/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/Projects/P64ALU-Gen1/top.xst" -ofn "/home/ise/Projects/P64ALU-Gen1/top.syr" 
+xst -intstyle ise -ifn "/home/ise/Projects/P64ALU-Gen1/top.xst" -ofn "/home/ise/Projects/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+vhdtdtfi -lib work /home/ise/Projects/P64ALU-Gen1/top.v -lang verilog -prj P64ALU-Gen1 -o top.spl -module top -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500xl top.spl /home/ise/Projects/P64ALU-Gen1/top.sym 
+vhdtdtfi -lang verilog -prj P64ALU-Gen1 -o /home/ise/Projects/P64ALU-Gen1/top.tfi -lib work /home/ise/Projects/P64ALU-Gen1//top.v -module top -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "/home/ise/Projects/P64ALU-Gen1/top.xst" -ofn "/home/ise/Projects/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/Projects/P64ALU-Gen1/top.xst" -ofn "/home/ise/Projects/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Gen1/top.xst" -ofn "/home/ise/ISE/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Gen1/top.xst" -ofn "/home/ise/ISE/P64ALU-Gen1/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+xst -intstyle ise -ifn "/home/ise/ISE/P64ALU-Sub/top.xst" -ofn "/home/ise/ISE/P64ALU-Sub/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc9572xl-VQ64-10 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 25 -unused float -power std -terminate keeper top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -n top -i top 

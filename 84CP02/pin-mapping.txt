@@ -3,34 +3,34 @@ Connector Pin	Signal Name	Chip pin
 J1-01			Vcc			(03) internal
 J1-02			Vcc			(26) internal
 
-J1-03			A 0			36
-J1-04			A 1			61
-J1-05			A 2			48
-J1-06			A 3			06
-J1-07			A 4			52
-J1-08			A 5			39
-J1-09			A 6			25
-J1-10			A 7			35
-J1-11			A 8			08
-J1-12			A 9			45
-J1-13			A 10		02
-J1-14			A 11		05
-J1-15			A 12		31
-J1-16			A 13		56
-J1-17			A 14		34
-J1-18			A 15		58
+J1-03			A 0			36	UL/LR
+J1-04			A 1			61	UL/UR
+J1-05			A 2			48	UL/LR
+J1-06			A 3			06	UL/UL
+J1-07			A 4			52	UL/UR
+J1-08			A 5			39	UL/LR
+J1-09			A 6			25	UL/LL
+J1-10			A 7			35	UL/LR
+J1-11			A 8			08	UL/UL
+J1-12			A 9			45	UL/LR
+J1-13			A 10		02	UL/UL
+J1-14			A 11		05	UL/UL
+J1-15			A 12		31	UL/LL
+J1-16			A 13		56	UL/UR
+J1-17			A 14		34	LL/LL
+J1-18			A 15		58	LL/UR
 
-J1-19			C_IN		64
-J1-20			C_OUT		59
-J1-21			F0			46
-J1-22			F1			33
+J1-19			C_IN		64	LL/UR
+J1-20			C_OUT		59	LL/UR
+J1-21			F0			46	LL/LR
+J1-22			F1			33	LL/LR
 
-J1-23			B 0			16
-J1-24			B 1			47
-J1-25			B 2			32
-J1-26			B 3			44
-J1-27			B 4			09
-J1-28			B 5			57
+J1-23			B 0			16	LL/LL
+J1-24			B 1			47	LL/LR
+J1-25			B 2			32	LL/LL
+J1-26			B 3			44	LL/LR
+J1-27			B 4			09	LL/UL
+J1-28			B 5			57	LL/UR
 
 J1-29			GND			(14) internal
 J1-30			GND			(21) internal
@@ -38,33 +38,33 @@ J1-30			GND			(21) internal
 J2-30			GND			(41) internal
 J2-29			GND			(54) internal
 
-J2-28			B 6			12
-J2-27			B 7			19
-J2-26			B 8			20
-J2-25			B 9			18
-J2-24			B 10		60
-J2-23			B 11		11
-J2-22			B 12		15
-J2-21			B 13		63
-J2-20			B 14		38
-J2-19			B 15		17
+J2-28			B 6			12	LR/UL
+J2-27			B 7			19	LR/LL
+J2-26			B 8			20	LR/LL
+J2-25			B 9			18	LR/LL
+J2-24			B 10		60	LR/UR
+J2-23			B 11		11	LR/UL
+J2-22			B 12		15	LR/UL
+J2-21			B 13		63	LR/UR
+J2-20			B 14		38	LR/LR
+J2-19			B 15		17	LR/LL
 
-J2-18			OUT 15		07
-J2-17			OUT 14		01
-J2-16			OUT 13		10
-J2-15			OUT 12		40
-J2-14			OUT 11		23
-J2-13			OUT 10		13
-J2-12			OUT 9		27
-J2-11			OUT 8		42
-J2-10			OUT 7		50
-J2-09			OUT 6		51
-J2-08			OUT 5		04
-J2-07			OUT 4		49
-J2-06			OUT 3		24
-J2-05			OUT 2		22
-J2-04			OUT 1		43
-J2-03			OUT 0		62
+J2-18			OUT 15		07	LR/UL
+J2-17			OUT 14		01	LR/UL
+J2-16			OUT 13		10	UR/UL
+J2-15			OUT 12		40	UR/LR
+J2-14			OUT 11		23	UR/LL
+J2-13			OUT 10		13	UR/UL
+J2-12			OUT 9		27	UR/LL
+J2-11			OUT 8		42	UR/LR
+J2-10			OUT 7		50	UR/UR
+J2-09			OUT 6		51	UR/UR
+J2-08			OUT 5		04	UR/UL
+J2-07			OUT 4		49	UR/UR
+J2-06			OUT 3		24	UR/LL
+J2-05			OUT 2		22	UR/LL
+J2-04			OUT 1		43	UR/LR
+J2-03			OUT 0		62	UR/UR
 
 J2-02			Vcc			(55) internal
 J2-01			Vcc			(37) internal
